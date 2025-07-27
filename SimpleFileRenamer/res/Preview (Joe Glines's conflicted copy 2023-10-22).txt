@@ -1,0 +1,1 @@
+﻿"S:\Multi File Renamer\Simple File Renamer\src\Last Text Document.txt" -> "LAST TEXT DOCUMENT.TXT"

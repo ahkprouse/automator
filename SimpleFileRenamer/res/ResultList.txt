@@ -1,0 +1,5 @@
+﻿"F:\TV\Reacher\S1\08  Pie (1080P Bluray X265 Ghost).mp4" -> "08  Pie.mp4"
+"F:\TV\Reacher\S1\04  In A Tree (1080P Bluray X265 Ghost).mp4" -> "04  In A Tree.mp4"
+"F:\TV\Reacher\S1\05  No Apologies (1080P Bluray X265 Ghost).mp4" -> "05  No Apologies.mp4"
+"F:\TV\Reacher\S1\06  Papier (1080P Bluray X265 Ghost).mp4" -> "06  Papier.mp4"
+"F:\TV\Reacher\S1\07  Reacher Said Nothing (1080P Bluray X265 Ghost).mp4" -> "07  Reacher Said Nothing.mp4"

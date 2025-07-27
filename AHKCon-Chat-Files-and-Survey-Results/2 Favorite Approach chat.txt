@@ -1,0 +1,97 @@
+01:49:32	Chad Wilson:	I am muted
+01:49:47	William Schnepp:	first thing I get is Asprin
+01:49:48	Charlie-Tank Simmons:	me too
+01:50:20	Norman Albertson:	Depends on the goals of the script, doesn't it?
+01:51:15	Charlie-Tank Simmons:	I am muted
+01:52:22	Lonnie Cherryholmes:	To clarify my answer I want to do both but have not done much that I share with others
+01:53:01	Geek Dude:	I want to make code that, when it fails, fails predictably and gracefully. APIs allow me to do that
+01:53:11	Ahren Groesch:	That's obviously best practice, but often we use AHK because there's a program that doesn't play well with others.
+01:53:20	Erik Oehm:	Hit me up if you are a AutoHotkey_H expert.  I'm looking to embed AHK v2 into a .NET app I'm writing.  I'm already doing it with AHKDLL but it's only v1.1.
+01:54:13	Brian McGinty:	I started by moving the mouse because that's the only thing I could make work and see it work.  Then came using SEND to send shortcut keys and accelerator keys and mnemonics..then using comspec to send to the command line..it's the worst way but a beginner has to start at the beginning...
+01:54:20	Joe Glines:	@GeekDude-  Amen!
+01:54:43	Eugene Voon:	In one of my scripts working with excel, I found that there were times when sending hotkeys that interact with excel was actually easier than using COM. But it was completely situational as not everything in excel can be done using just hotkeys
+01:55:24	Johannes von Bahr:	I always try to find an API solution, and use keystrokes as a last resort. However, I find it very difficult to get APIs to work, ESPECIALLY with Autohotkey. I usually get stuck with retrieveing Access Tokens and oAuth and so on. Though I managed to get Philips HUE API to work with AHK, and it has been absolutely amazing.
+01:56:04	Ahren Groesch:	Can Joe just surrender to being a programmer already?
+01:56:13	Isaias Baez (RaptorX):	HAHAHA
+01:56:14	Isaias Baez (RaptorX):	yeah
+01:56:15	Isaias Baez (RaptorX):	sure
+01:56:18	Isaias Baez (RaptorX):	we gonna make it happen
+01:57:15	Joe Glines:	@Ahren-  Never!  That's why I hire Isaias, Maestrith, Tank, etc.
+01:57:28	Geek Dude:	That's one reason I don't think programmer jobs are going away to AI. That is, the client frequently doesn't know what to ask for. Even with AI, the computer still does what you tell it to, and if you tell it wrong it will do the wrong thing and fail to be a useful tool
+01:58:37	Ahren Groesch:	That's the most important part of any IT job, extracting the actual requirements from the nonsense the customer tells you.
+01:58:57	T N:	You can always get out of stuck blockinput with ctrl-alt-delete.
+01:59:15	Eugene Voon:	Not 100% sure but I think block input causes exe to get caught by the antivirus.
+02:00:35	Ahren Groesch:	There needs to be a built in command for this
+02:01:59	Geek Dude:	I had a situation the other day where I had to populate the clipboard and then send Shift-Insert instead of Control-V because the target application was processing control-v in a non-standard way
+02:04:38	Erik Oehm:	UIA is exciting!
+02:05:05	Joe Glines:	agreed Erik
+02:05:28	Allan Smith:	There is a power shell script to expose com to start then google from there
+02:05:31	Arbab Irfan:	I started with COM coz I was little bit with familiar excel with VBA, I did not need to use VBA anymore.
+02:05:40	Joe Glines:	https://the-Automator.com/COM
+02:05:42	Mage Prometheus:	There is a com inspector in the windows SDK
+02:05:44	Erik Oehm:	Inspect.exe comes with Windows SDK.  Is that the one?
+02:05:54	Isaias Baez (RaptorX):	yes I think that's the one
+02:06:04	Joe Glines:	On this page is Tank's script  https://the-Automator.com/COM
+02:09:15	Erik Oehm:	You can use something called Reflection to detect the interface of a COM object or .NET assembly.
+02:09:46	Erik Oehm:	This is a way that you can automate inspection of the methods and properties of an object.
+02:10:23	Joe Glines:	https://the-Automator.com/WaysToAutomate   I cover 17 ways to automate with AutoHotkey
+02:13:32	Md. Ismail Hosen:	Is there any gui to generate gui xml?
+02:14:41	Joe Glines:	❓❓❓@MD- what do you mean bu GUI xml?
+02:15:08	Md. Ismail Hosen:	In java you can build User Interface from xml syntax
+02:15:26	Arbab Irfan (Xeo786):	am I into supply chain and all the big logistics provides api request to automate work, there big names like DHL, Infor Nexus, have worked with.
+02:15:28	William Schnepp:	Anyone have a course about AHK  working with SQL?
+02:15:31	Md. Ismail Hosen:	So is there anything like that.
+02:15:33	Joe Glines:	XML is just a "data structure"
+02:15:39	Arbab Irfan (Xeo786):	i am*
+02:17:30	Md. Ismail Hosen:	Yes. But you can build user interface from the xml data structure.
+02:18:09	T N:	@Md. Ismail Hosen Not unless someone has made a custom XML-to-AHK GUI parser.
+02:18:23	Kirk Lawrence:	what was the name of the chrome control exe?
+02:19:21	Joe Glines:	❓❓❓@Kirk are you asking how to automate Chrome?
+02:19:35	Kirk Lawrence:	yeah, he mentioned something like ufadium?
+02:19:39	Joe Glines:	@Kirk- there are several ways...    Chrome.ahk, Rufaydium, UI Automation
+02:20:15	Kirk Lawrence:	chrome.ahk didn’t work well for me, I’ll try Rufaydium… thx
+02:21:03	Md. Ismail Hosen:	I get the idea from the ahk studio actually.
+02:21:18	Md. Ismail Hosen:	I have seen many xml file in the ahk studio.
+02:21:41	Md. Ismail Hosen:	Okay. Thank you.
+02:21:42	Joe Glines:	@MD.   Cool.   Maestrith did a  few videos with me teaching how to use his XML class
+02:22:44	Arbab Irfan (Xeo786):	I've looked into ahk studio, maestrith did great job, and that Code is now a bit understandable after all these years
+02:22:54	Brian M:	❓❓❓could you talk a little about best practise for folder structure for scripts, e.g. where would #include files be stored and also best ahk macro's and ahk ide's
+02:23:18	Geek Dude:	I suspect that Neutron would probably work with a XHTML document if you would ever want to go that route
+02:23:20	Joe Glines:	@Brian-  I think that's something we can talk to during lunch
+02:23:32	Md. Ismail Hosen:	Oh. You can combine both idea. Xml and add control using code as well. So when dynamicity is needed then code. Otherwise xml.
+02:23:44	Brian M:	thanks Joe
+02:23:59	Joe Glines:	@Brian M- yep.  Just remeind me if I forget
+02:26:26	Descolada:	❓❓❓Is anybody aware of a method of attaching to an existing Chrome tab without installing external programs? AFAIK Chrome.ahk/CDP can attach to an existing debug window, but not to an already open tab.
+02:26:59	Cloaker Smoker:	Does that work on classes that don't implement IDispatch? I don't think I really understand the point when you're just wrapping AHK's COM support
+02:27:51	Anthony Alvarez:	What is COM automation? Are COMs built into windows or are COMs created by the AHK programmer?
+02:28:15	Joe Glines:	@Anthony-  Com ins microsoft's Compnent Obect Model
+02:28:42	Joe Glines:	@Anthony    think of it as a way to allow you to, programmatically, use AutoHotkey to control programs (like VBA does)
+02:28:57	Geek Dude:	COM stands for Component Object Model and is a method of direct communication between programs designed by Microsoft. Internet Explorer and all the Office programs were built around the COM concept. Third party programs like Adobe and iTunes sometimes offer COM interfaces as well
+02:29:22	Anthony Alvarez:	COM is an API to control a desktop windows program?
+02:29:33	Dimitri Geerts:	https://docs.microsoft.com/en-us/windows/win32/com/com-fundamentals
+02:29:43	Anthony Alvarez:	Thank you so much
+02:29:56	Arbab Irfan (Xeo786):	@descolada there are probably security reasons why one cannot access ongoing normal chrome browser,
+02:29:59	Cloaker Smoker:	it is generic, it is basically a common "language" that loads of different programs and languages all "speak"
+02:30:47	Joe Glines:	The video I did where Tank talks about COM and it's history was really interesting  https://www.youtube.com/watch?v=Jvttk5EpJaI
+02:33:06	Anthony Alvarez:	Is COM a Microsoft software exclusive feature? If the desktop program is not made by Microsoft, how likely is the COM to be available? For example. Does the open source password manager "KeePass2" have a COM object?
+02:33:46	Arbab Irfan (Xeo786):	COM is just like Api calls
+02:33:47	Geek Dude:	Not very likely, and as far as I'm aware KeePass2 does *not* offer a COM API. Instead, the preferred API for KeePass2 is, I believe, the KeePassHTTP plugin
+02:34:18	William Schnepp:	Imagine a world with only one programming language.....
+02:34:23	Geek Dude:	Before the world seemingly settled on JavaScript as the de-facto standard for all sorts of things, COM was Microsoft's solution for allowing scripting language macros and plugins in their softwares. Office settled on VBScript for its embedded macros, and JavaScript for Internet Explorer, but the same interfaces available to VBScript office macros are available to other languages through COM. Back in the day, everyone was hedging their bets as to what scripting languages would be dominant
+02:34:30	Joe Glines:	@Anthony- No, I've used other programs that have COM objects
+02:34:51	Anthony Alvarez:	Thank you Joe.
+02:34:52	Geek Dude:	These days, most programs build against a single scripting language like Lua or JavaScript instead of making their interfaces available as a general API like COM
+02:35:11	Joe Glines:	if you go to https://the-Automator.com/COM you'll see some of them
+02:37:21	Arbab Irfan (Xeo786):	Rufaydium is translates http rest request into AHK class object .... just like C++/dllcall stuff  translated to COM
+02:37:38	Geek Dude:	That is, if the programs support scripting at all
+02:39:57	Joe Glines:	5 minutes left
+02:40:39	Johannes von Bahr:	❓❓❓Do you as AHK experts successfully use APIs that require Authorization, oAuth and Access tokens and so on, with Autohotkey? I find it very difficult. The developer documentation is usually not that easy (or time consuming) and a lot of times it is based around Python or Java Library that can not be applied to AHK. I have watched Joe's webinar on APIs and successfully managed to connect to some APIs. However there are so many more I have not gotten to work, such as Microsoft Graph API, Spotify, Reddit etc. More content about APIs with Autohotkey would be very appreciated.
+02:41:07	Dimitri Geerts:	Can you share your screen?
+02:41:35	Joe Glines:	@Johannes-  Sure.  A lot however, as you mention, every WEbservice API is different and the OAuth can be a pain.
+02:41:40	William Schnepp:	Learning    a lot    hate to see time going so fAST
+02:42:32	Anthony Alvarez:	What is the STEPs recorder? Is it still available?
+02:42:42	Joe Glines:	just type "steps" in the run command
+02:42:59	Joe Glines:	meaning hit Windows+r and start typing steps
+02:43:02	Robert Rosenwald:	Steps Recorder https://support.microsoft.com/en-us/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47
+02:44:40	Dimitri Geerts:	windows+r does not work, just press windows key and type Steps Recorder and press enter
+02:45:04	Anthony Alvarez:	Thank you

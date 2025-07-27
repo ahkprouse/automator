@@ -1,0 +1,130 @@
+07:13:16	Ben Sacherich:	Anthony I sent you a DM with an answer.https://www.autohotkey.com/boards/viewtopic.php?t=17878
+07:14:04	TAB Tation:	Random does Dale look like Micheal Scoot
+07:14:42	Anthony Alvarez:	Thank you so much @ben!!
+07:14:48	Joe Glines:	@Tab -  Machael Scott from the office...   But Dale's competent and not rude
+07:14:54	Eugene Voon:	@Anthony if you know the hotkey for any particular program, you could technically map it to your preferred hotkey and use #If or #IfWinActive for context sensitive triggers
+07:15:01	William Schnepp:	Guess I'll maybe go to version 2  THEN   add in SQL <> AHK      I think Youy all have saved me a lot of my future time
+07:15:02	Anthony Alvarez:	When you have lots of scripts, is there a good graphical AHK Command picker? What is your favorite?
+07:15:31	TAB Tation:	is that tanks foot
+07:15:40	Brian M:	thanks for that Raptor
+07:17:04	Joe Glines:	@Anthony I use Quick Access Popup for a ton of things
+07:17:30	TAB Tation:	https://www.redbubble.com/i/poster/Michael-Scott-Prison-Mike-The-Office-by-TyroDesign/32372852.LVTDI
+07:17:51	William Schnepp:	I Die without QAP
+07:19:00	Anthony Alvarez:	Thank you so much @Joe!
+07:19:03	Kirk Lawrence:	Thanks everyone!
+07:19:09	Eugene Voon:	Huh the night is young its only 430am 🤡
+07:19:16	Erik Oehm:	THANK YOU!!!!
+07:19:18	Allan Smith:	Good show thanks everyone see you all
+07:19:21	Ali Honarjoo:	Thank you!
+07:19:27	William Schnepp:	Pluf Your Courses!
+07:19:27	Eugene Voon:	Thank you!!
+07:19:28	Dimitri Geerts:	22:34
+07:19:36	Dimitri Geerts:	Thanks for organizing this, Joe 👍
+07:19:39	Descolada:	Thanks, was very interesting! 👍
+07:19:40	Ben Sacherich:	Eugene what is the Powerball number for today?
+07:19:57	Ali Honarjoo:	And it was supposed to be in Vagas!! :)
+07:20:04	Brian M:	great day and  effort by you Joe and Isias, thank you and all here for sharing so generously
+07:20:05	Ali Honarjoo:	*Vegas
+07:20:06	Eugene Voon:	Hahaha no idea
+07:20:13	Anthony Alvarez:	Learned so much today. It was informative. Appreciate your support and concern to my questions. Have a good weekend.
+07:20:20	TAB Tation:	year 1 of many
+07:20:48	Maciej Słojewski:	thanks a lot! 🙂 👍 ❤
+07:20:55	William Schnepp:	Let's do this every week Or every other day
+07:21:01	Maciej Słojewski:	Happy coding everyone! 🖥
+07:21:07	TAB Tation:	I need to go where Anthony is
+07:21:27	Joe Glines:	https://the-Automator.com/Fridays
+07:21:58	William Schnepp:	Didn't know about the Hero's after show
+07:22:16	Brian M:	in the same vein Joe, I typed an email this morning asking for some assistance, non ahk and half  way tru the email I'd figured it out,
+07:22:38	Joe Glines:	Cool Brian
+07:23:24	Brian M:	so i'm not only Billy no mates I'm talking to myself, ill be hearing voices next, lol
+07:23:42	Ben Sacherich:	Saturday is good.
+07:24:23	Eugene Voon:	Theres the people who move from gaming to work too
+07:24:44	Ahren Groesch:	That describes me
+07:24:49	Brian M:	the other thing is that when you have to stand up and teach you gotta understand your subject
+07:25:30	William Schnepp:	Had A teacher  require us to make videos
+07:25:31	TAB Tation:	my first code was send commands lol
+07:25:42	Dimitri Geerts:	trying to convert code or modify code is also good to start learning
+07:25:56	Dimitri Geerts:	code of other people
+07:26:03	Brian M:	when i gave professional courses i'd say to attendees, "you'll learn this week but I also expect to learn from you"
+07:26:14	Maciej Słojewski:	I'm still working on extending Hotstring application and would be glad to share to everybody with my newest release
+07:26:28	Ben Sacherich:	Has anyone found a way to use AHK with Teams?
+07:26:35	Ben Sacherich:	Teams seems to be web based.
+07:26:36	Ahren Groesch:	Is there a list of key codes of all the keys that aren't on a standard keyboard? I want to build a custom keyboard purely for AHK hotkeys and need keys for it not on a normal board.
+07:26:50	Anthony Alvarez:	Is there a list of pre-sorted HK scripts by use-case? Lets say for web browser and email automation?
+07:26:51	bruhski the second:	it's electron afaik
+07:26:58	Brian M:	oh yea Joe, am i off your Christmas list, I don't get the Friday invites anymore, lol
+07:27:02	Maciej Słojewski:	Keyboard automation: next step is called "steno" (aka stenotyping) which would be big step to… everybody willing to harness it
+07:27:29	Brian M:	I resigned up with my new email but ….
+07:27:35	TAB Tation:	its electron based so it ehh
+07:27:51	Eugene Voon:	I think mapping joystick/controller keys to a macro keyboard would be fine if you don't actually use a controller
+07:27:51	bram Tack:	i found here some stuff https://gist.github.com/tdalon/84d9caea0368ab0420b81363c2048705 about automatisation and teamsmostly based on findtext
+07:28:01	Ahren Groesch:	I know how to find keys on an existing board thanks to that video. I need a list of codes to build my own keyboard.
+07:28:22	T N:	@Ahren Groesch Look for 'Undefined' under 'Description' column https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes 
+07:28:30	bruhski the second:	does the main window not have a unique class
+07:28:31	Kirk Lawrence:	In scraping web pages, I tend to save ClipboardAll and open with IE to get access to the DOM (elements on the page).   Since IE is going away, what are some other/better ways to get access to the DOM?
+07:28:40	Joe Glines:	@ahren this video we show how to determine what the ScanCode and Virtual key is  https://youtu.be/or9pMCbP1HE
+07:29:03	TAB Tation:	yes they do its electron
+07:29:04	Joe Glines:	@Kirk- there are several main ways
+07:29:15	Maciej Słojewski:	❓❓❓http://www.openstenoproject.org/ it would be great to combine "steno" idea with AutoHotkey 🙂
+07:29:20	Eugene Voon:	A WMS system I worked with also had their controls wrapped in some wrapper
+07:29:30	Joe Glines:	1) UIA is good for simple stuff   2) Rufaydium  3) AutoControl is  a chrome extension  4) Chrome.ahk
+07:30:02	TAB Tation:	electron
+07:30:10	Kirk Lawrence:	@Joe.  Thanks, I’ll be trying 2 and 3 shortly :-)
+07:30:22	Ben Sacherich:	Microsoft Teamsahk_class Chrome_WidgetWin_1ahk_exe Teams.exeahk_pid 18908
+07:30:23	Joe Glines:	@Kirk we have good videos on both
+07:30:47	Maciej Słojewski:	❓❓❓Let's think about another challenge: in Joomla! community, there is so called "extension shop". There should be something similar for AutoHotkey community: a bridge between open source and commercially available applications.
+07:31:06	Anthony Alvarez:	Have a good weekend. Thank you everybody.
+07:31:17	Joe Glines:	by Anthony
+07:31:24	TAB Tation:	TY for coming
+07:31:53	Joe Glines:	@maciej  Yeah, that would be cool
+07:35:11	Dimitri Geerts:	Have a nice weekend, everyone, It was interesting.
+07:35:28	Chad Wilson:	@Dimitri \o
+07:35:47	Ben Sacherich:	Yes.
+07:35:48	Joe Glines:	Thanks Dimitri
+07:35:55	T N:	In Skype, you'll find all UIA controls but you'll have to grab them via the handle of one of two exposed controls, not the main Skype window itself.
+07:36:08	TAB Tation:	is ben me soon? the hair and bread
+07:37:07	TAB Tation:	who it joe?
+07:37:22	Ben Sacherich:	Time for a group photo?
+07:37:27	TAB Tation:	tell us about you
+07:37:48	Kirk Lawrence:	Thanks a bunch
+07:38:01	TAB Tation:	if I could get in I would talk lol
+07:38:40	Eugene Voon:	Ah the afterparty is starting
+07:39:20	T N:	Thanks to everyone who took part in arranging this AHKCon, as well as regular participants! This was a blast.
+07:39:34	Scott Stutzman:	Agreed
+07:39:43	Enrique Casas Jimenez:	im the same
+07:39:54	Enrique Casas Jimenez:	that's why i try to automate things 😁
+07:39:54	Robert Rosenwald:	When you do a follow-up survey, I would be interested in knowing the experience level of the participants.
+07:40:02	William Schnepp:	My Education is mjore important then a Life    LOL
+07:40:30	Eugene Voon:	I say I'm lazy to do my actual work but I'm not lazy to figure out how to automate it 😂
+07:40:46	Joe Glines:	Spot on Eugene!
+07:41:04	William Schnepp:	oooooh   New IDE for XMas!!!!
+07:41:25	Scott Stutzman:	Yes it is
+07:41:35	Robert Rosenwald:	Absolutely!
+07:41:44	Enrique Casas Jimenez:	remind me of the xkcd comic
+07:43:19	Scott Stutzman:	Same here
+07:43:25	Noel De Bruin:	Also. fixing the obvious holes to reduce/eliminate frustrations for many the company provided tools may be inadequate to the task which they are supposed to be used.
+07:43:56	Enrique Casas Jimenez:	and helps reduce human errors and reduce downtime in the long run
+07:44:44	Joe Glines:	Very cool @Noel
+07:44:45	Scott Stutzman:	Reducing human error is my main reason.
+07:44:47	Noel De Bruin:	Absolutely, have things that are created for that exact purpose.
+07:44:51	Joe Glines:	Amen @enrique
+07:45:00	Joe Glines:	Cool @Scott
+07:45:29	Eugene Voon:	Btw in my past 2 years at my previous job I automated a number of tasks that would have otherwise required an extra headcount. I was later told by my manager that no one in the company was will to endorse AHK. I left that company 1 month later.
+07:45:43	Eugene Voon:	willing*
+07:45:48	TAB Tation:	send {tab} that is what I got at first, shout out to Kane for teaching me
+07:46:07	Joe Glines:	That's awesome Eugene!
+07:46:20	Joe Glines:	I had two bosses at Texas Instruments that told me "not to automate" things
+07:46:35	Joe Glines:	I'm  a beliver in asking for forgiveness instead of permission
+07:46:42	Eugene Voon:	Feels like some companies just want seat warmers
+07:47:04	TAB Tation:	@joe I love the video about will AI will replace us
+07:49:26	Ahren Groesch:	People are weird about computers doing things for them
+07:49:27	Enrique Casas Jimenez:	or they'll never notice it's automated :)
+07:49:46	Noel De Bruin:	Staying under the radar can be the best policy.
+07:49:48	TAB Tation:	TY
+07:49:54	TAB Tation:	send me a shirt
+07:49:54	Joe Glines:	Thanks everyone!
+07:49:58	Chad Wilson:	o/ Everyone \o
+07:49:59	Ali Honarjoo:	Thank you!
+07:50:01	Joe Glines:	lol
+07:50:02	Eugene Voon:	Thanks for hosting! Cant wait for AHKCon2! Goodnight~
+07:50:09	tony artis:	thank you good job

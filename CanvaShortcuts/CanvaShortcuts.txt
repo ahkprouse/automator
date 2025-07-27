@@ -1,0 +1,35 @@
+General Shortcuts:
+
+T: Add text
+R: Add rectangle
+C: Add circle
+L: Add line
+M: Add more
+Text Editing Shortcuts:
+
+Ctrl/Cmd + B: Bold
+Ctrl/Cmd + I: Italic
+Ctrl/Cmd + U: Underline
+Ctrl/Cmd + Shift + K: Capitalize
+Ctrl/Cmd + E: Center text
+Ctrl/Cmd + L: Left align text
+Ctrl/Cmd + R: Right align text
+Ctrl/Cmd + J: Justify text
+Canvas Navigation Shortcuts:
+
+Ctrl/Cmd + +/-: Zoom in/out
+Ctrl/Cmd + 0: Fit canvas to screen
+Ctrl/Cmd + Shift + 0: Actual size
+Element Manipulation Shortcuts:
+
+Ctrl/Cmd + D: Duplicate
+Ctrl/Cmd + G: Group
+Ctrl/Cmd + Shift + G: Ungroup
+Ctrl/Cmd + P: Position
+Ctrl/Cmd + Shift + V: Flip vertically
+Ctrl/Cmd + Shift + H: Flip horizontally
+File Management Shortcuts:
+
+Ctrl/Cmd + S: Save
+Ctrl/Cmd + Z: Undo
+Ctrl/Cmd + Shift + Z: Redo

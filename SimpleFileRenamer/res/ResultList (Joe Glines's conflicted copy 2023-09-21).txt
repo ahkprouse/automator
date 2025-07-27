@@ -1,0 +1,3 @@
+﻿"C:\Temp\heroDiscounts.html" -> "HERODISCOUNTS.HTML"
+"C:\Temp\Paint Shop Pro 7.lnk" -> "FAINT SHOP PRO 7.LNK"
+"C:\Temp\Atomic-011.mp3" -> "ATOMIC-011.MP3"

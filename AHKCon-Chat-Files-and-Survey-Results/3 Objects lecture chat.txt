@@ -1,0 +1,92 @@
+02:50:59	Md. Ismail Hosen:	??? I was trying to find documentation about static method and couldn't get any. Do we have static method in AHK?
+02:51:25	Cloaker Smoker:	all methods are technically static, you can call them on the class name itself
+02:52:04	Md. Ismail Hosen:	Can I call like this Logger.Log("Test Message to log") where Logger is the class name
+02:52:20	Md. Ismail Hosen:	I am not creating a new instance of Logger.
+02:52:28	Geek Dude:	All AHK methods can be called statically, their "this" variable will be populated with the base object of the class definition (i.e. if your class is "MyClass", you can call "MyClass.method()" and inside method "this" will be the same as the super global "MyClass")
+02:53:12	Robert Rosenwald:	❓❓❓Are all examples in v 1.1 or v 2.0
+02:53:32	Geek Dude:	The current example being written appears to be v1.1
+02:53:32	Cloaker Smoker:	everything outside of the V2 section is V1 afaik, so this is V1
+02:53:54	T N:	Coming from industry standard OOP languages, entire concept of having only static methods and separate class and instance object was quite confusing at first.
+02:54:48	Joe Glines:	These, object examples, are V1
+02:54:50	Geek Dude:	It's much more in line with JavaScript's prototype based system than C++ or Java
+02:57:07	Md. Ismail Hosen:	@Geek Dude Thank you. I tried yesterday and couldn't work. Now it is working.
+02:57:44	Charlie-Tank Simmons:	i gotta hop out soon
+02:57:44	Dimitri Geerts:	Error :D
+02:57:45	T N:	Will or should?
+02:57:45	Ali Honarjoo:	empty
+02:57:46	Johannes von Bahr:	error
+02:57:47	Cloaker Smoker:	a TypeError should be thrown ;)
+02:57:48	Ahren Groesch:	undefined error
+02:57:58	Norman Albertson:	you have burned down the house
+02:57:59	Geek Dude:	Cheeky Cloaker
+02:58:07	Robert Rosenwald:	error
+02:58:08	bram Tack:	creates the property? shows null
+02:58:15	Geek Dude:	Empty string!
+02:58:21	Brian M:	msg height does not exist
+02:58:25	Mage Prometheus:	In a strongly typed language it will not compile. In a scripting language it should call a meta function to allow dynamic dispatch.
+02:58:28	Md. Ismail Hosen:	Empty string
+02:58:38	Dimitri Geerts:	But V1 gives an empty string, but an error should happen logically
+02:58:48	Joe Glines:	All I want to know is where is the #Requires directive???
+02:58:50	Arbab Irfan (Xeo786):	I want write kitchen class extends to house and add makelunch() methods and parameter saying lunch is ready I am feeling hungry its 9:00PM here
+02:58:53	Brian M:	ahk2, im in
+02:59:16	Geek Dude:	I never use #Warn so I don't know the answer, but I think it's worth asking whether the behavior changes in response to #Warn
+03:02:26	Md. Ismail Hosen:	What about of creating object with param. Like Parametrized object creation or factory pattern?
+03:02:52	Geek Dude:	The __new() meta-function accepts parameters. I suspect Isaias will be showing that soon
+03:03:32	Geek Dude:	The factory pattern is definitely possible to implement in AHK, if that's something you find useful
+03:03:36	Md. Ismail Hosen:	Got it. Thank you.
+03:04:23	Anthony Alvarez:	The new command sets up default properties of the object.  And delete does a kind of garbage collection? What is the difference between class and an object?
+03:04:55	Geek Dude:	An object groups related data together. A class (in AutoHotkey) is an object that groups both related data and functions that operate on that data together.
+03:04:58	Md. Ismail Hosen:	house design and building a real house based on the design.
+03:05:19	bruhski the second:	A class is an object, and an instance is an object that uses the class as a "base"
+03:05:46	Descolada:	The default behavior of returning an empty string when calling a non-existant property/method is nice when chaining methods/properties: House.GetAllDoors().1.color will either return a color or empty string instead of throwing an error, so you just need to validate the end-result, not all the steps between them. In v2 this wouldn't work I think?
+03:06:00	Joe Glines:	When you're working with Classes you're really becoming "a programmer" and designing code that is well built, structured, maintained, compartmentalized, etc.
+03:06:01	Anthony Alvarez:	So class is like the blueprint as Isais said and object is built on the class?
+03:06:18	Md. Ismail Hosen:	yes.
+03:07:14	Geek Dude:	@Descolada I believe in v2 that problem is resolved with a new operator
+03:08:47	Anthony Alvarez:	Is there a special extension to run AHK code in VS Code?
+03:09:07	Dimitri Geerts:	? why new House() is working? shouldn't it have the variable color?
+03:09:29	Md. Ismail Hosen:	@Anthony AutoHotkey Plus Plus
+03:09:45	Joe Glines:	@Anthony - watch our webinar on VS code and AutoHotkey
+03:10:27	Mage Prometheus:	It's similar to Lua but without all the extra complexity
+03:10:42	Geek Dude:	@Dimitri It's a quirk of AHK. As I recall, if you don't give the enough parameters to new House() / __New() it just doesn't call __New(). It's unfortunate, since that situation should really give an error
+03:11:35	Mage Prometheus:	I hate 1 based indexing haha
+03:11:36	Joe Glines:	@GeekDude-  Do you know if that is changed in V2?
+03:11:43	Geek Dude:	I do not know that
+03:13:25	Dimitri Geerts:	it does :D
+03:14:18	Dimitri Geerts:	V2 does gives an error, all hail V2 🥳
+03:16:25	Dimitri Geerts:	I would not use ==
+03:16:28	Geek Dude:	You're muted Joe
+03:16:31	Anthony Alvarez:	How do you use this with Win COM objects?
+03:16:37	drew petty:	joe is on mute
+03:16:51	T N:	Please note that metafunctions will only get called if they are defined _in the base class_ of whatever you're calling them through.
+03:16:58	Kirk Lawrence:	excellent explanation of classes
+03:17:01	Guy Mayer:	does that mean you can define new suff on the fly
+03:17:52	Guy Mayer:	stuff = meathods
+03:17:58	Joe Glines:	@Anthony- this is for creating your own Objects / Classes.       But OOP (Object Oriented Programming) is what you're using when you use the COM object
+03:18:16	Joe Glines:	@Thanks Kirk!
+03:18:28	Descolada:	Btw, __Call gets called if the class at hand doesn't contain the method. For example, if your class extends another class (eg class Building extends House) and you call a method of the base class from the extended class (Building.openDoor), then __Call gets called as well... So throwing the error at __Call might trip you up there sometimes
+03:18:44	Mage Prometheus:	That's method overloading, not polymorphism
+03:19:22	Geek Dude:	AutoHotkey v1 does not support method overloading as is being shown here, and will throw a duplicate method definition error when the script is loaded
+03:20:30	Guy Mayer:	is there a v1 to v2 "translator" script ?
+03:20:44	Geek Dude:	For you folks who come from a programming background and are already familiar with the basic operations of classes, and are more interested in the details of how AHK's prototype-based class system is implemented including the dirtier details of meta-functions, how the "new" keyword internally operates on the class object you give it, how you can build classes without the "class" keyword, etc. I wrote a lot of information on that topic here https://www.autohotkey.com/boards/viewtopic.php?f=7&t=6177
+03:21:03	Jean Lalonde:	In what situatin would you use polymorphism?
+03:21:27	Joe Glines:	@Guy- I've linked to that above GUy
+03:21:41	Dimitri Geerts:	@Guy Maker: you can use my v1 to V2 convertor: https://the-Automator.com/v1tov2
+03:22:10	Jean Lalonde:	Personaly, I'd prefer to defing different method names.
+03:31:48	Joe Glines:	anybody have any follow up questions?
+03:33:50	Dimitri Geerts:	TheArkive has written an amazing extension for the Gui object in V2, it allows a lot of extra functions like adding picture buttons https://www.autohotkey.com/boards/viewtopic.php?f=83&t=86124
+03:33:53	Geek Dude:	One of the reasons I use Classes when writing libraries is because of this feature. If I make a library and have it as a class, and someone wants to change it for their own reasons, they can keep my original library "mint" and use class extension to just change the individual functions that needed changed.
+03:35:13	Geek Dude:	For example, if you're trying to use Chrome.ahk for Opera instead of Chrome, you can make a "class Opera extends Chrome" which just replaces the __New() function with code that sets up the Opera connection
+03:35:25	Joe Glines:	thanks @Geekdude!
+03:35:39	Dimitri Geerts:	shouldnt it be this.GoTo(url)?
+03:36:09	Anthony Alvarez:	Thanks for great explaination
+03:38:09	Geek Dude:	In v1, if you do this.Goto(), the Goto method will have your MyBrowser instance as "this". If you do CustomBrowser.Goto() it will have the CustomBrowser base object as "this". If you do MyBrowser.goto() it will have the MyBrowser base object as this. If you want to call CustomBrowser explicitly but make sure that "this" is the instance object, you would use CustomBrowser.Goto.Call(this, url) or CustomBrowser.Goto.(this, url) with that extra period
+03:38:29	Md. Ismail Hosen:	Can you give an example interface?
+03:38:46	Mage Prometheus:	I've not seen it in the docs so I assume that AHK v1/v2 do not support polymorphic method dispatch via vtables as the object variables are not strongly typed. Classes are more a convenience rather than a full oo implementation like in C++/ C#
+03:40:03	Geek Dude:	In AutoHotkey classes are prototype based like JavaScript, and the "class" keyword is syntactic sugar around a superglobal object definition.
+03:41:08	Mage Prometheus:	Thank you.
+03:41:14	Geek Dude:	As a result, there is a 1:1 mapping between keys and methods
+03:41:46	Geek Dude:	Inside AutoHotkey's source code, objects are a C++ class that implement IDispatch, but the Invoke method on that C++ class is subject to the same 1:1 mapping limitation due to the structure of the object
+03:42:14	Eugene Voon:	Haha would be nice to have lunch but its 1am in Singapore
+03:42:20	Brian M:	im deaf, i wont hera the knock on the door, lol
+03:42:30	Geek Dude:	I'm glad you could make it @Eugene despite the time

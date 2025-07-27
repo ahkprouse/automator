@@ -1,0 +1,140 @@
+
+<!--
+  Written: Ryan Wells (nayrsllew@gmail.com)
+  Date: 8 January 2023
+  Acknowldgements: ChatGPT3, Joe Glines, Isasis Baez
+
+Note:
+Replace the IP address with your own
+Edit the data value and button label to suit your needs
+Edit the listener.php file to launch programs/scripts you want to launch
+
+-->
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<script src="https://kit.fontawesome.com/56a6c7eb73.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700;800&display=swap" rel="stylesheet">
+<script>document.querySelector("body").requestFullscreen();</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<script>
+  document.getElementById("form").addEventListener("submit", function(event) {
+      event.preventDefault();
+  
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+              console.log(this.responseText);
+          }
+      };
+      xhttp.open("POST", "http://192.168.1.249/listener.php", true);  /* Replace IP Address with your own */
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  });
+
+</script>
+
+<script>
+  function vibrate(){
+   if(!("vibrate" in navigator)){
+   alert("Vibrate not supported!");
+     return;
+    }
+   navigator.vibrate(500);
+  }
+</script>
+
+
+<style>
+
+/**
+Fonts via Google Fonts: https://fonts.google.com/specimen/Fira+Sans
+Icons via: FontAwesome.com
+**/
+
+.stylebutton {
+  width: 1/8;
+  height: full;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  font-family: 'Fira Sans', sans-serif;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+</style>
+
+
+<body class="h-screen">
+
+<form id="form">
+
+    <div class="grid grid-cols-8 gap-0 h-full">
+
+    <button class="stylebutton bg-green-50 lg" data-value="NotePad" onclick="vibrate()">NotePad</button>
+    <button class="stylebutton bg-green-100 lg" data-value="Map" onclick="vibrate()">Map</button>
+    <button class="stylebutton bg-green-200 lg" data-value="Timer" onclick="vibrate()">Timer</button>
+    <button class="stylebutton bg-green-300 lg" data-value="4" onclick="vibrate()"><i class="fa-solid fa-heart fa-2xl" style="--fa-animation-duration: 0.5s;" ></i></button>
+    <button class="stylebutton bg-green-400 lg" data-value="playpause" onclick="vibrate()">Play</button>
+    <button class="stylebutton bg-green-500 lg" data-value="" onclick="vibrate()"><i class="fa-solid fa-coffee fa-2xl"></i></button>
+    <button class="stylebutton bg-green-600 lg" data-value="7" onclick="vibrate()">7</button>
+    <button class="stylebutton bg-green-700 lg" data-value="8" onclick="vibrate()">8</button>
+    <button class="stylebutton bg-red-900 lg" data-value="9" onclick="vibrate()">9</button>
+    <button class="stylebutton bg-red-800 lg" data-value="10" onclick="vibrate()">10</button>
+    <button class="stylebutton bg-red-700 lg" data-value="11" onclick="vibrate()">11</button>
+    <button class="stylebutton bg-red-600 lg" data-value="12" onclick="vibrate()">12</button>
+    <button class="stylebutton bg-red-500 lg" data-value="13" onclick="vibrate()">13</button>
+    <button class="stylebutton bg-red-400 lg" data-value="14" onclick="vibrate()">14</button>
+    <button class="stylebutton bg-red-300 lg" data-value="15" onclick="vibrate()">15</button>
+    <button class="stylebutton bg-red-200 lg" data-value="16" onclick="vibrate()">16</button>
+    <button class="stylebutton bg-blue-200 lg" data-value="17" onclick="vibrate()">17</button>
+    <button class="stylebutton bg-blue-300 lg" data-value="18" onclick="vibrate()">18</button>
+    <button class="stylebutton bg-blue-400 lg" data-value="19" onclick="vibrate()">19</button>
+    <button class="stylebutton bg-blue-500 lg" data-value="20" onclick="vibrate()">20</button>
+    <button class="stylebutton bg-blue-600 lg" data-value="21" onclick="vibrate()">21</button>
+    <button class="stylebutton bg-blue-700 lg" data-value="22" onclick="vibrate()">22</button>
+    <button class="stylebutton bg-blue-800 lg" data-value="23" onclick="vibrate()">23</button>
+    <button class="stylebutton bg-blue-900 lg" data-value="24" onclick="vibrate()">24</button>
+    
+  </div>
+  <input type="hidden" name="value" value="Notepad">
+
+</form>
+
+<script>
+  var form = document.getElementById("form");
+  form.addEventListener("click", function(event) {
+   if (event.target.matches("button")) {
+      var input = this.querySelector("input[name='value']");
+      input.value = event.target.getAttribute("data-value");
+
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+         if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText);
+         }
+      };
+      xhttp.open("POST", "http://192.168.1.249/listener.php", true);   /* Replace IP Address with your own */
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhttp.send("value=" + input.value);
+   }
+});
+
+</script>
+
+</body>
+</html>

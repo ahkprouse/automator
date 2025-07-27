@@ -1,0 +1,1141 @@
+;==================================================
+
+;CF.ahk
+;Commands As Functions https://www.autohotkey.com/boards/viewtopic.php?t=26900
+;AutoHotkey commands as functions
+;original Functions.ahk functions by Titan/polyethene
+;modifications and additional functions by jeeswg
+;[updated: 2017-01-15]
+
+;==================================================
+
+;;;ORIGINAL FUNCTIONS
+
+CF_IfBetween(ByRef Var, LowerBound, UpperBound) {
+	if Var between %LowerBound% and %UpperBound%
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfNotBetween(ByRef Var, LowerBound, UpperBound) {
+	if Var not between %LowerBound% and %UpperBound%
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfIn(ByRef Var, MatchList) {
+	if Var in %MatchList%
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfNotIn(ByRef Var, MatchList) {
+	if Var not in %MatchList%
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfContains(ByRef Var, MatchList) {
+	if Var contains %MatchList%
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfNotContains(ByRef Var, MatchList) {
+	if Var not contains %MatchList%
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfIs(ByRef Var, Type) {
+	if Var is %Type%
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfIsNot(ByRef Var, Type) {
+	if Var is not %Type%
+	Return, 1
+	else
+	Return, 0
+}
+CF_ControlGet(Cmd, Value = "", Control = "", WinTitle = "", WinText = "", ExcludeTitle = "", ExcludeText = "") {
+	ControlGet, v, %Cmd%, %Value%, %Control%, %WinTitle%, %WinText%, %ExcludeTitle%, %ExcludeText%
+	Return, v
+}
+CF_ControlGetFocus(WinTitle = "", WinText = "", ExcludeTitle = "", ExcludeText = "") {
+	ControlGetFocus, v, %WinTitle%, %WinText%, %ExcludeTitle%, %ExcludeText%
+	Return, v
+}
+CF_ControlGetText(Control = "", WinTitle = "", WinText = "", ExcludeTitle = "", ExcludeText = "") {
+	ControlGetText, v, %Control%, %WinTitle%, %WinText%, %ExcludeTitle%, %ExcludeText%
+	Return, v
+}
+CF_DriveGet(Cmd, Value = "") {
+	DriveGet, v, %Cmd%, %Value%
+	Return, v
+}
+CF_DriveSpaceFree(Path) {
+	DriveSpaceFree, v, %Path%
+	Return, v
+}
+CF_EnvGet(EnvVarName) {
+	EnvGet, v, %EnvVarName%
+	Return, v
+}
+CF_FileGetAttrib(Filename = "") {
+	FileGetAttrib, v, %Filename%
+	Return, v
+}
+CF_FileGetShortcut(LinkFile, ByRef OutTarget = "", ByRef OutDir = "", ByRef OutArgs = "", ByRef OutDescription = "", ByRef OutIcon = "", ByRef OutIconNum = "", ByRef OutRunState = "") {
+	FileGetShortcut, %LinkFile%, OutTarget, OutDir, OutArgs, OutDescription, OutIcon, OutIconNum, OutRunState
+}
+CF_FileGetSize(Filename = "", Units = "") {
+	FileGetSize, v, %Filename%, %Units%
+	Return, v
+}
+CF_FileGetTime(Filename = "", WhichTime = "") {
+	FileGetTime, v, %Filename%, %WhichTime%
+	Return, v
+}
+CF_FileGetVersion(Filename = "") {
+	FileGetVersion, v, %Filename%
+	Return, v
+}
+CF_FileRead(Filename) {
+	FileRead, v, %Filename%
+	Return, v
+}
+CF_FileReadLine(Filename, LineNum) {
+	FileReadLine, v, %Filename%, %LineNum%
+	Return, v
+}
+CF_FileSelectFile(Options = "", RootDir = "", Prompt = "", Filter = "") {
+	FileSelectFile, v, %Options%, %RootDir%, %Prompt%, %Filter%
+	Return, v
+}
+CF_FileSelectFolder(StartingFolder = "", Options = "", Prompt = "") {
+	FileSelectFolder, v, %StartingFolder%, %Options%, %Prompt%
+	Return, v
+}
+CF_FormatTime(YYYYMMDDHH24MISS = "", Format = "") {
+	FormatTime, v, %YYYYMMDDHH24MISS%, %Format%
+	Return, v
+}
+CF_GetKeyState(KeyName, Mode = "") {
+	GetKeyState, v, %KeyName%, %Mode%
+	Return, v
+}
+CF_GuiControlGet(Subcommand = "", ControlID = "", Param4 = "") {
+	GuiControlGet, v, %Subcommand%, %ControlID%, %Param4%
+	Return, v
+}
+CF_ImageSearch(ByRef OutputVarX, ByRef OutputVarY, X1, Y1, X2, Y2, ImageFile) {
+	ImageSearch, OutputVarX, OutputVarY, %X1%, %Y1%, %X2%, %Y2%, %ImageFile%
+}
+CF_IniRead(Filename, Section, Key, Default = "") {
+	IniRead, v, %Filename%, %Section%, %Key%, %Default%
+	Return, v
+}
+CF_Input(Options = "", EndKeys = "", MatchList = "") {
+	Input, v, %Options%, %EndKeys%, %MatchList%
+	Return, v
+}
+CF_InputBox(Title = "", Prompt = "", HIDE = "", Width = "", Height = "", X = "", Y = "", Font = "", Timeout = "", Default = "") {
+	InputBox, v, %Title%, %Prompt%, %HIDE%, %Width%, %Height%, %X%, %Y%, , %Timeout%, %Default%
+	Return, v
+}
+CF_MouseGetPos(ByRef OutputVarX = "", ByRef OutputVarY = "", ByRef OutputVarWin = "", ByRef OutputVarControl = "", Param5 = "") {
+	MouseGetPos, OutputVarX, OutputVarY, OutputVarWin, OutputVarControl, %Param5%
+}
+CF_PixelGetColor(X, Y, Param3 = "") {
+	PixelGetColor, v, %X%, %Y%, %Param3%
+	Return, v
+}
+CF_PixelSearch(ByRef OutputVarX, ByRef OutputVarY, X1, Y1, X2, Y2, ColorID, Variation = "", Param9 = "") {
+	PixelSearch, OutputVarX, OutputVarY, %X1%, %Y1%, %X2%, %Y2%, %ColorID%, %Variation%, %Param9%
+}
+CF_Random(Min = "", Max = "") {
+	Random, v, %Min%, %Max%
+	Return, v
+}
+CF_RegRead(RootKey, SubKey, ValueName = "") {
+	RegRead, v, %RootKey%, %SubKey%, %ValueName%
+	Return, v
+}
+CF_Run(Target, WorkingDir = "", Mode = "") {
+	Run, %Target%, %WorkingDir%, %Mode%, v
+	Return, v
+}
+CF_SoundGet(ComponentType = "", ControlType = "", DeviceNumber = "") {
+	SoundGet, v, %ComponentType%, %ControlType%, %DeviceNumber%
+	Return, v
+}
+CF_SoundGetWaveVolume(DeviceNumber = "") {
+	SoundGetWaveVolume, v, %DeviceNumber%
+	Return, v
+}
+CF_StatusBarGetText(Part = "", WinTitle = "", WinText = "", ExcludeTitle = "", ExcludeText = "") {
+	StatusBarGetText, v, %Part%, %WinTitle%, %WinText%, %ExcludeTitle%, %ExcludeText%
+	Return, v
+}
+CF_SplitPath(ByRef InputVar, ByRef OutFileName = "", ByRef OutDir = "", ByRef OutExtension = "", ByRef OutNameNoExt = "", ByRef OutDrive = "") {
+	SplitPath, InputVar, OutFileName, OutDir, OutExtension, OutNameNoExt, OutDrive
+}
+CF_StringGetPos(ByRef InputVar, SearchText, Param4 = "", Offset = "") {
+	StringGetPos, v, InputVar, %SearchText%, %Param4%, %Offset%
+	Return, v
+}
+CF_StringLeft(ByRef InputVar, Count) {
+	StringLeft, v, InputVar, %Count%
+	Return, v
+}
+CF_StringLen(ByRef InputVar) {
+	StringLen, v, InputVar
+	Return, v
+}
+CF_StringLower(ByRef InputVar, T = "") {
+	StringLower, v, InputVar, %T%
+	Return, v
+}
+CF_StringMid(ByRef InputVar, StartChar, Count , L = "") {
+	StringMid, v, InputVar, %StartChar%, %Count%, %L%
+	Return, v
+}
+CF_StringReplace(ByRef InputVar, SearchText, ReplaceText = "", ReplaceAll = "") {
+	StringReplace, v, InputVar, %SearchText%, %ReplaceText%, %ReplaceAll%
+	Return, v
+}
+CF_StringRight(ByRef InputVar, Count) {
+	StringRight, v, InputVar, %Count%
+	Return, v
+}
+CF_StringTrimLeft(ByRef InputVar, Count) {
+	StringTrimLeft, v, InputVar, %Count%
+	Return, v
+}
+CF_StringTrimRight(ByRef InputVar, Count) {
+	StringTrimRight, v, InputVar, %Count%
+	Return, v
+}
+CF_StringUpper(ByRef InputVar, T = "") {
+	StringUpper, v, InputVar, %T%
+	Return, v
+}
+CF_SysGet(Subcommand, Param3 = "") {
+	SysGet, v, %Subcommand%, %Param3%
+	Return, v
+}
+CF_Transform(Cmd, Value1, Value2 = "") {
+	Transform, v, %Cmd%, %Value1%, %Value2%
+	Return, v
+}
+CF_WinGet(Cmd = "", WinTitle = "", WinText = "", ExcludeTitle = "", ExcludeText = "") {
+	WinGet, v, %Cmd%, %WinTitle%, %WinText%, %ExcludeTitle%, %ExcludeText%
+	Return, v
+}
+CF_WinGetActiveTitle() {
+	WinGetActiveTitle, v
+	Return, v
+}
+CF_WinGetClass(WinTitle = "", WinText = "", ExcludeTitle = "", ExcludeText = "") {
+	WinGetClass, v, %WinTitle%, %WinText%, %ExcludeTitle%, %ExcludeText%
+	Return, v
+}
+CF_WinGetText(WinTitle = "", WinText = "", ExcludeTitle = "", ExcludeText = "") {
+	WinGetText, v, %WinTitle%, %WinText%, %ExcludeTitle%, %ExcludeText%
+	Return, v
+}
+CF_WinGetTitle(WinTitle = "", WinText = "", ExcludeTitle = "", ExcludeText = "") {
+	WinGetTitle, v, %WinTitle%, %WinText%, %ExcludeTitle%, %ExcludeText%
+	Return, v
+}
+
+;==================================================
+
+;;;ORIGINAL FUNCTIONS (ALTERNATIVE NAMES)
+
+CF_Between(ByRef Var, LowerBound, UpperBound) {
+	if Var between %LowerBound% and %UpperBound%
+	Return, 1
+	else
+	Return, 0
+}
+CF_NotBetween(ByRef Var, LowerBound, UpperBound) {
+	if Var not between %LowerBound% and %UpperBound%
+	Return, 1
+	else
+	Return, 0
+}
+CF_In(ByRef Var, MatchList) {
+	if Var in %MatchList%
+	Return, 1
+	else
+	Return, 0
+}
+CF_NotIn(ByRef Var, MatchList) {
+	if Var not in %MatchList%
+	Return, 1
+	else
+	Return, 0
+}
+CF_Contains(ByRef Var, MatchList) {
+	if Var contains %MatchList%
+	Return, 1
+	else
+	Return, 0
+}
+CF_NotContains(ByRef Var, MatchList) {
+	if Var not contains %MatchList%
+	Return, 1
+	else
+	Return, 0
+}
+CF_Is(ByRef Var, Type) {
+	if Var is %Type%
+	Return, 1
+	else
+	Return, 0
+}
+CF_IsNot(ByRef Var, Type) {
+	if Var is not %Type%
+	Return, 1
+	else
+	Return, 0
+}
+
+;==================================================
+
+;;;ORIGINAL FUNCTIONS (ALTERNATIVE NAMES+)
+
+CF_IsType(ByRef Var, Type) {
+	if Var is %Type%
+	Return, 1
+	else
+	Return, 0
+}
+CF_IsNotType(ByRef Var, Type) {
+	if Var is not %Type%
+	Return, 1
+	else
+	Return, 0
+}
+
+;==================================================
+
+;;;FUNCTIONS NOT ADDED
+
+;CF_Break
+;CF_Continue
+;CF_Else
+;CF_If
+;CF_Loop
+;CF_While
+
+;'Source' parameter must be literal text
+;CF_FileInstall(Source, Dest, Flag="") {
+;	FileInstall, % Source, % Dest, % Flag
+;	Return
+;}
+
+;Gui command causes scripts to become Persistent
+;CF_Gui(Subcommand, Param2="", Param3="", Param4="") {
+;	Gui, % Subcommand, % Param2, % Param3, % Param4
+;	Return
+;}
+
+;defunct command
+;CF_Repeat() {
+;	Repeat
+;	Return
+;}
+
+;==================================================
+
+;;;SPECIAL FUNCTIONS
+
+CF_MsgBox(Options="Press OK to continue.", Title="", Text="", Timeout="") {
+	if (Title = "") && (Text = "") && (Timeout = "")
+	Text := Options, Options := ""
+	MsgBox, % Options, % Title, % Text, % Timeout
+
+	ButtonNames = Yes,No,OK,Cancel,Abort,Ignore,Retry,Continue,TryAgain,Timeout
+	Loop, Parse, ButtonNames, `,
+	IfMsgBox, %A_LoopField%
+	Return, A_LoopField
+	Return
+}
+
+CF_Return() {
+	Exit
+	Return
+}
+
+;e.g.
+;vText := "a,b,c"
+;CF_StringSplit("vOutput", vText, ", ")
+;MsgBox % vOutput " " vOutput0 " " vOutput1 " " vOutput2 " " vOutput3
+
+CF_Sort(VarName, Options="") {
+	Sort, VarName, % Options
+	Return, VarName
+}
+
+CF_StringSplit(OutputArray, ByRef InputVar, Delimiters="", OmitChars="") {
+	global
+	StringSplit, % OutputArray, InputVar, % Delimiters, % OmitChars
+	Return
+}
+
+;==================================================
+
+;;;FUNCTIONS WITH BYREF INPUT/OUTPUT VARIABLES
+
+CF_ControlGetPos(ByRef X="", ByRef Y="", ByRef Width="", ByRef Height="", Control="", WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	ControlGetPos, X, Y, Width, Height, % Control, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_EnvAdd(ByRef Var, Value, TimeUnits="") {
+	EnvAdd, %Var%, %Value%, %TimeUnits%
+	Return
+}
+CF_EnvDiv(ByRef Var, Value) {
+	EnvDiv, %Var%, %Value%
+	Return
+}
+CF_EnvMult(ByRef Var, Value) {
+	EnvMult, %Var%, %Value%
+	Return
+}
+CF_EnvSub(ByRef Var, Value, TimeUnits="") {
+	EnvSub, %Var%, %Value%, %TimeUnits%
+	Return
+}
+CF_RunWait(Target, WorkingDir="", Param3="", ByRef OutputVarPID="") {
+	RunWait, % Target, % WorkingDir, % Param3, OutputVarPID
+	Return
+}
+CF_SetEnv(ByRef Var, Value) {
+	SetEnv, Var, % Value
+	Return
+}
+CF_WinGetActiveStats(ByRef Title, ByRef Width, ByRef Height, ByRef X, ByRef Y) {
+	WinGetActiveStats, Title, Width, Height, X, Y
+	Return
+}
+CF_WinGetPos(ByRef X="", ByRef Y="", ByRef Width="", ByRef Height="", WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	WinGetPos, X, Y, Width, Height, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+
+;==================================================
+
+;;;FUNCTIONS WITH NO PARAMETERS
+
+CF_Click() {
+	Click
+	Return
+}
+CF_Edit() {
+	Edit
+	Return
+}
+CF_EnvUpdate() {
+	EnvUpdate
+	Return
+}
+CF_KeyHistory() {
+	KeyHistory
+	Return
+}
+CF_ListHotkeys() {
+	ListHotkeys
+	Return
+}
+CF_ListVars() {
+	ListVars
+	Return
+}
+CF_Reload() {
+	Reload
+	Return
+}
+CF_SplashTextOff() {
+	SplashTextOff
+	Return
+}
+CF_WinMinimizeAll() {
+	WinMinimizeAll
+	Return
+}
+CF_WinMinimizeAllUndo() {
+	WinMinimizeAllUndo
+	Return
+}
+
+;==================================================
+
+;;;IF FUNCTIONS
+
+CF_IfEqual(ByRef Var, Value) {
+	IfEqual, Var, % Value
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfExist(FilePattern) {
+	IfExist, % FilePattern
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfGreater(ByRef Var, Value) {
+	IfGreater, Var, % Value
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfGreaterOrEqual(ByRef Var, Value) {
+	IfGreaterOrEqual, Var, % Value
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfInString(ByRef Var, SearchString) {
+	IfInString, Var, % SearchString
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfLess(ByRef Var, Value) {
+	IfLess, Var, % Value
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfLessOrEqual(ByRef Var, Value) {
+	IfLessOrEqual, Var, % Value
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfNotEqual(ByRef Var, Value) {
+	IfNotEqual, Var, % Value
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfNotExist(FilePattern) {
+	IfNotExist, % FilePattern
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfNotInString(ByRef Var, SearchString) {
+	IfNotInString, Var, % SearchString
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfWinActive(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	IfWinActive, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfWinExist(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	IfWinExist, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfWinNotActive(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	IfWinNotActive, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return, 1
+	else
+	Return, 0
+}
+CF_IfWinNotExist(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	IfWinNotExist, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return, 1
+	else
+	Return, 0
+}
+
+;==================================================
+
+;;;IF FUNCTIONS (ALTERNATIVE NAMES)
+
+CF_Equal(ByRef Var, Value) {
+	IfEqual, Var, % Value
+	Return, 1
+	else
+	Return, 0
+}
+CF_Exist(FilePattern) {
+	IfExist, % FilePattern
+	Return, 1
+	else
+	Return, 0
+}
+CF_Greater(ByRef Var, Value) {
+	IfGreater, Var, % Value
+	Return, 1
+	else
+	Return, 0
+}
+CF_GreaterOrEqual(ByRef Var, Value) {
+	IfGreaterOrEqual, Var, % Value
+	Return, 1
+	else
+	Return, 0
+}
+CF_InString(ByRef Var, SearchString) {
+	IfInString, Var, % SearchString
+	Return, 1
+	else
+	Return, 0
+}
+CF_Less(ByRef Var, Value) {
+	IfLess, Var, % Value
+	Return, 1
+	else
+	Return, 0
+}
+CF_LessOrEqual(ByRef Var, Value) {
+	IfLessOrEqual, Var, % Value
+	Return, 1
+	else
+	Return, 0
+}
+CF_NotEqual(ByRef Var, Value) {
+	IfNotEqual, Var, % Value
+	Return, 1
+	else
+	Return, 0
+}
+CF_NotExist(FilePattern) {
+	IfNotExist, % FilePattern
+	Return, 1
+	else
+	Return, 0
+}
+CF_NotInString(ByRef Var, SearchString) {
+	IfNotInString, Var, % SearchString
+	Return, 1
+	else
+	Return, 0
+}
+CF_WinActive(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	IfWinActive, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return, 1
+	else
+	Return, 0
+}
+CF_WinExist(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	IfWinExist, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return, 1
+	else
+	Return, 0
+}
+CF_WinNotActive(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	IfWinNotActive, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return, 1
+	else
+	Return, 0
+}
+CF_WinNotExist(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	IfWinNotExist, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return, 1
+	else
+	Return, 0
+}
+
+;==================================================
+
+;;;IF FUNCTIONS+
+
+CF_IfMsgBox(ButtonName) {
+	IfMsgBox, %ButtonName%
+	Return, 1
+	else
+	Return, 0
+}
+
+;==================================================
+
+;;;FUNCTIONS WITH ONE OR MORE PARAMETERS
+
+CF_AutoTrim(Param1) {
+	AutoTrim, % Param1
+	Return
+}
+CF_BlockInput(Mode) {
+	BlockInput, % Mode
+	Return
+}
+CF_ClipWait(SecondsToWait="", Param2="") {
+	ClipWait, % SecondsToWait, % Param2
+	Return
+}
+CF_Control(Cmd, Value="", Control="", WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	Control, % Cmd, % Value, % Control, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_ControlClick(ControlOrPos="", WinTitle="", WinText="", WhichButton="", ClickCount="", Options="", ExcludeTitle="", ExcludeText="") {
+	ControlClick, % ControlOrPos, % WinTitle, % WinText, % WhichButton, % ClickCount, % Options, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_ControlFocus(Control="", WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	ControlFocus, % Control, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_ControlMove(Control, X, Y, Width, Height, WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	ControlMove, % Control, % X, % Y, % Width, % Height, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_ControlSend(Control="", Keys="", WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	ControlSend, % Control, % Keys, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_ControlSendRaw(Control="", Keys="", WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	ControlSendRaw, % Control, % Keys, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_ControlSetText(Control="", NewText="", WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	ControlSetText, % Control, % NewText, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_CoordMode(Param1, Param2="") {
+	CoordMode, % Param1, % Param2
+	Return
+}
+CF_Critical(Param1) {
+	Critical, % Param1
+	Return
+}
+CF_DetectHiddenText(Param1) {
+	DetectHiddenText, % Param1
+	Return
+}
+CF_DetectHiddenWindows(Param1) {
+	DetectHiddenWindows, % Param1
+	Return
+}
+CF_Drive(Subcommand, Drive="", Value="") {
+	Drive, % Subcommand, % Drive, % Value
+	Return
+}
+CF_EnvSet(EnvVar, Value) {
+	EnvSet, % EnvVar, % Value
+	Return
+}
+CF_Exit(ExitCode="") {
+	Exit, % ExitCode
+	Return
+}
+CF_ExitApp(ExitCode="") {
+	ExitApp, % ExitCode
+	Return
+}
+CF_FileAppend(Text="", Filename="", Encoding="") {
+	FileAppend, % Text, % Filename, % Encoding
+	Return
+}
+CF_FileCopy(SourcePattern, DestPattern, Flag="") {
+	FileCopy, % SourcePattern, % DestPattern, % Flag
+	Return
+}
+CF_FileCopyDir(Source, Dest, Flag="") {
+	FileCopyDir, % Source, % Dest, % Flag
+	Return
+}
+CF_FileCreateDir(DirName) {
+	FileCreateDir, % DirName
+	Return
+}
+CF_FileCreateShortcut(Target, LinkFile, WorkingDir="", Args="", Description="", IconFile="", ShortcutKey="", IconNumber="", RunState="") {
+	FileCreateShortcut, % Target, % LinkFile, % WorkingDir, % Args, % Description, % IconFile, % ShortcutKey, % IconNumber, % RunState
+	Return
+}
+CF_FileDelete(FilePattern) {
+	FileDelete, % FilePattern
+	Return
+}
+CF_FileMove(SourcePattern, DestPattern, Flag="") {
+	FileMove, % SourcePattern, % DestPattern, % Flag
+	Return
+}
+CF_FileMoveDir(Source, Dest, Flag="") {
+	FileMoveDir, % Source, % Dest, % Flag
+	Return
+}
+CF_FileRecycle(FilePattern) {
+	FileRecycle, % FilePattern
+	Return
+}
+CF_FileRecycleEmpty(DriveLetter="") {
+	FileRecycleEmpty, % DriveLetter
+	Return
+}
+CF_FileRemoveDir(DirName, Recurse="") {
+	FileRemoveDir, % DirName, % Recurse
+	Return
+}
+CF_FileSetAttrib(Attributes, FilePattern="", OperateOnFolders="", Recurse="") {
+	FileSetAttrib, % Attributes, % FilePattern, % OperateOnFolders, % Recurse
+	Return
+}
+CF_FileSetTime(YYYYMMDDHH24MISS="", FilePattern="", WhichTime="", OperateOnFolders="", Recurse="") {
+	FileSetTime, % YYYYMMDDHH24MISS, % FilePattern, % WhichTime, % OperateOnFolders, % Recurse
+	Return
+}
+CF_Gosub(Label) {
+	Gosub, % Label
+	Return
+}
+CF_Goto(Label) {
+	Goto, % Label
+	Return
+}
+CF_GroupActivate(GroupName, R="") {
+	GroupActivate, % GroupName, % R
+	Return
+}
+CF_GroupAdd(GroupName, WinTitle="", WinText="", Label="", ExcludeTitle="", ExcludeText="") {
+	GroupAdd, % GroupName, % WinTitle, % WinText, % Label, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_GroupClose(GroupName, Param2="") {
+	GroupClose, % GroupName, % Param2
+	Return
+}
+CF_GroupDeactivate(GroupName, R="") {
+	GroupDeactivate, % GroupName, % R
+	Return
+}
+CF_GuiControl(Subcommand, ControlID, Param3="") {
+	GuiControl, % Subcommand, % ControlID, % Param3
+	Return
+}
+CF_Hotkey(KeyName, Label="", Options="") {
+	Hotkey, % KeyName, % Label, % Options
+	Return
+}
+CF_IniDelete(Filename, Section, Key="") {
+	IniDelete, % Filename, % Section, % Key
+	Return
+}
+CF_IniWrite(Value, Filename, Section, Key) {
+	IniWrite, % Value, % Filename, % Section, % Key
+	Return
+}
+CF_KeyWait(KeyName, Options="") {
+	KeyWait, % KeyName, % Options
+	Return
+}
+CF_ListLines(Param1="") {
+	ListLines, % Param1
+	Return
+}
+CF_Menu(MenuName, Cmd, P3="", P4="", P5="") {
+	Menu, % MenuName, % Cmd, % P3, % P4, % P5
+	Return
+}
+CF_MouseClick(WhichButton="L", X="", Y="", ClickCount="", Speed="", Param6="", R="") {
+	MouseClick, % WhichButton, % X, % Y, % ClickCount, % Speed, % Param6, % R
+	Return
+}
+CF_MouseClickDrag(WhichButton, X1, Y1, X2, Y2, Speed="", R="") {
+	MouseClickDrag, % WhichButton, % X1, % Y1, % X2, % Y2, % Speed, % R
+	Return
+}
+CF_MouseMove(X, Y, Speed="", R="") {
+	MouseMove, % X, % Y, % Speed, % R
+	Return
+}
+CF_OnExit(Label="") {
+	OnExit, % Label
+	Return
+}
+CF_OutputDebug(Text) {
+	OutputDebug, % Text
+	Return
+}
+CF_Pause(Param1="", OperateOnUnderlyingThread="") {
+	Pause, % Param1, % OperateOnUnderlyingThread
+	Return
+}
+CF_PostMessage(Msg, wParam="", lParam="", Control="", WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	PostMessage, % Msg, % wParam, % lParam, % Control, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_Process(Cmd, PIDOrName="", Param3="") {
+	Process, % Cmd, % PIDOrName, % Param3
+	Return
+}
+CF_Progress(Param1, SubText="", MainText="", WinTitle="", FontName="") {
+	Progress, % Param1, % SubText, % MainText, % WinTitle, % FontName
+	Return
+}
+CF_RegDelete(RootKey, SubKey, ValueName="") {
+	RegDelete, % RootKey, % SubKey, % ValueName
+	Return
+}
+CF_RegWrite(ValueType, RootKey, SubKey, ValueName="", Value="") {
+	RegWrite, % ValueType, % RootKey, % SubKey, % ValueName, % Value
+	Return
+}
+CF_RunAs(User="", Password="", Domain="") {
+	RunAs, % User, % Password, % Domain
+	Return
+}
+CF_Send(Keys) {
+	Send, % Keys
+	Return
+}
+CF_SendEvent(Keys) {
+	SendEvent, % Keys
+	Return
+}
+CF_SendInput(Keys) {
+	SendInput, % Keys
+	Return
+}
+CF_SendMessage(Msg, wParam="", lParam="", Control="", WinTitle="", WinText="", ExcludeTitle="", ExcludeText="", Timeout="") {
+	SendMessage, % Msg, % wParam, % lParam, % Control, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText, % Timeout
+	Return
+}
+CF_SendMode(Param1) {
+	SendMode, % Param1
+	Return
+}
+CF_SendPlay(Keys) {
+	SendPlay, % Keys
+	Return
+}
+CF_SendRaw(Keys) {
+	SendRaw, % Keys
+	Return
+}
+CF_SetBatchLines(Param1) {
+	SetBatchLines, % Param1
+	Return
+}
+CF_SetCapsLockState(State) {
+	SetCapsLockState, % State
+	Return
+}
+CF_SetControlDelay(Delay) {
+	SetControlDelay, % Delay
+	Return
+}
+CF_SetDefaultMouseSpeed(Speed) {
+	SetDefaultMouseSpeed, % Speed
+	Return
+}
+CF_SetFormat(NumberType, Format) {
+	SetFormat, % NumberType, % Format
+	Return
+}
+CF_SetKeyDelay(Delay="", PressDuration="", Play="") {
+	SetKeyDelay, % Delay, % PressDuration, % Play
+	Return
+}
+CF_SetMouseDelay(Delay, Play="") {
+	SetMouseDelay, % Delay, % Play
+	Return
+}
+CF_SetNumLockState(State) {
+	SetNumLockState, % State
+	Return
+}
+CF_SetScrollLockState(State) {
+	SetScrollLockState, % State
+	Return
+}
+CF_SetStoreCapslockMode(Param1) {
+	SetStoreCapslockMode, % Param1
+	Return
+}
+CF_SetTimer(Label, Param2="", Priority="") {
+	SetTimer, % Label, % Param2, % Priority
+	Return
+}
+CF_SetTitleMatchMode(MatchMode) {
+	SetTitleMatchMode, % MatchMode
+	Return
+}
+CF_SetWinDelay(Delay) {
+	SetWinDelay, % Delay
+	Return
+}
+CF_SetWorkingDir(DirName) {
+	SetWorkingDir, % DirName
+	Return
+}
+CF_Shutdown(Code) {
+	Shutdown, % Code
+	Return
+}
+CF_Sleep(DelayInMilliseconds) {
+	Sleep, % DelayInMilliseconds
+	Return
+}
+CF_SoundBeep(Frequency="", Duration="") {
+	SoundBeep, % Frequency, % Duration
+	Return
+}
+CF_SoundPlay(Filename, Wait="") {
+	SoundPlay, % Filename, % Wait
+	Return
+}
+CF_SoundSet(NewSetting, ComponentType="", ControlType="", DeviceNumber="") {
+	SoundSet, % NewSetting, % ComponentType, % ControlType, % DeviceNumber
+	Return
+}
+CF_SoundSetWaveVolume(Percent, DeviceNumber="") {
+	SoundSetWaveVolume, % Percent, % DeviceNumber
+	Return
+}
+CF_SplashImage(ImageFile="", Options="", SubText="", MainText="", WinTitle="", FontName="") {
+	SplashImage, % ImageFile, % Options, % SubText, % MainText, % WinTitle, % FontName
+	Return
+}
+CF_SplashTextOn(Width="", Height="", Title="", Text="") {
+	SplashTextOn, % Width, % Height, % Title, % Text
+	Return
+}
+CF_StatusBarWait(BarText="", Seconds="", Part="", WinTitle="", WinText="", Interval="", ExcludeTitle="", ExcludeText="") {
+	StatusBarWait, % BarText, % Seconds, % Part, % WinTitle, % WinText, % Interval, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_StringCaseSense(Param1) {
+	StringCaseSense, % Param1
+	Return
+}
+CF_Suspend(Mode="") {
+	Suspend, % Mode
+	Return
+}
+CF_Thread(Setting, Param2, Param3="") {
+	Thread, % Setting, % Param2, % Param3
+	Return
+}
+CF_ToolTip(Text="", X="", Y="", WhichToolTip="") {
+	ToolTip, % Text, % X, % Y, % WhichToolTip
+	Return
+}
+CF_TrayTip(Title="", Text="", Seconds="", Options="") {
+	TrayTip, % Title, % Text, % Seconds, % Options
+	Return
+}
+CF_URLDownloadToFile(URL, Filename) {
+	URLDownloadToFile, % URL, % Filename
+	Return
+}
+CF_WinActivate(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	WinActivate, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinActivateBottom(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	WinActivateBottom, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinClose(WinTitle="", WinText="", SecondsToWait="", ExcludeTitle="", ExcludeText="") {
+	WinClose, % WinTitle, % WinText, % SecondsToWait, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinHide(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	WinHide, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinKill(WinTitle="", WinText="", SecondsToWait="", ExcludeTitle="", ExcludeText="") {
+	WinKill, % WinTitle, % WinText, % SecondsToWait, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinMaximize(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	WinMaximize, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinMenuSelectItem(WinTitle, WinText, Menu, SubMenu1="", SubMenu2="", SubMenu3="", SubMenu4="", SubMenu5="", SubMenu6="", ExcludeTitle="", ExcludeText="") {
+	WinMenuSelectItem, % WinTitle, % WinText, % Menu, % SubMenu1, % SubMenu2, % SubMenu3, % SubMenu4, % SubMenu5, % SubMenu6, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinMinimize(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	WinMinimize, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinMove(WinTitle, WinText, X, Y, Width="", Height="", ExcludeTitle="", ExcludeText="") {
+	WinMove, % WinTitle, % WinText, % X, % Y, % Width, % Height, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinRestore(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	WinRestore, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinSet(Attribute, Value, WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	WinSet, % Attribute, % Value, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinSetTitle(WinTitle, WinText, NewTitle, ExcludeTitle="", ExcludeText="") {
+	WinSetTitle, % WinTitle, % WinText, % NewTitle, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinShow(WinTitle="", WinText="", ExcludeTitle="", ExcludeText="") {
+	WinShow, % WinTitle, % WinText, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinWait(WinTitle="", WinText="", Seconds="", ExcludeTitle="", ExcludeText="") {
+	WinWait, % WinTitle, % WinText, % Seconds, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinWaitActive(WinTitle="", WinText="", Seconds="", ExcludeTitle="", ExcludeText="") {
+	WinWaitActive, % WinTitle, % WinText, % Seconds, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinWaitClose(WinTitle="", WinText="", Seconds="", ExcludeTitle="", ExcludeText="") {
+	WinWaitClose, % WinTitle, % WinText, % Seconds, % ExcludeTitle, % ExcludeText
+	Return
+}
+CF_WinWaitNotActive(WinTitle="", WinText="", Seconds="", ExcludeTitle="", ExcludeText="") {
+	WinWaitNotActive, % WinTitle, % WinText, % Seconds, % ExcludeTitle, % ExcludeText
+	Return
+}
+
+;==================================================
+
+;;;FUNCTIONS FOR NEW COMMANDS ADDED SINCE AUTOHOTKEY BASIC v1.0.48.05
+;[up-to-date as of v1.1.24.04]
+
+CF_FileEncoding(Encoding="") {
+	FileEncoding, % Encoding
+	Return
+}
+CF_SendLevel(Level) {
+	SendLevel, % Level
+	Return
+}
+CF_SetRegView(RegView) {
+	SetRegView, % RegView
+	Return
+}
+
+;new parameters:
+;Break: LoopLabel
+;Continue: LoopLabel
+;FileAppend: Encoding
+;SendMessage: Timeout
+;SetKeyDelay: Play
+;SetMouseDelay: Play
+;SetTimer: Priority
+
+;optional parameters (that were previously compulsory):
+;ControlSetText: Control, NewText
+;GroupAdd: WinTitle
+;MouseClick: WhichButton
+;Process: PIDOrName
+;WinWait: WinTitle, WinText, Seconds
+;WinWaitClose: WinTitle, WinText, Seconds
+
+;==================================================

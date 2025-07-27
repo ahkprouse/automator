@@ -1,0 +1,9 @@
+/old
+
+*.ini
+*.zip
+*.exe
+*.ini
+*.*bak
+
+/logs

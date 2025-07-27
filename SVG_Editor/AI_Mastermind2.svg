@@ -1,0 +1,63 @@
+﻿<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->  <rect width="800" height="600" fill="#f8f9fa"/>
+ 
+  <!-- Circle 1: Business Foundation -->
+  <circle cx="300" cy="200" r="120" fill="#3498db" fill-opacity="0.3" stroke="#2980b9" stroke-width="2"/>
+  <text x="300" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill="#2980b9"> Business Foundation </text>
+  <text x="300" y="165" text-anchor="middle" font-size="11" fill="#34495e">• $50K-$1M revenue </text>
+  <text x="300" y="180" text-anchor="middle" font-size="11" fill="#34495e">• 3+ years experience</text>
+  <text x="300" y="195" text-anchor="middle" font-size="11" fill="#34495e">• Past survival mode</text>
+  
+  <!-- Circle 2: Skills And Knowledge -->
+  <circle cx="500" cy="200" r="120" fill="#e74c3c" fill-opacity="0.3" stroke="#c0392b" stroke-width="2"/>
+  <text x="510" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill="#c0392b">Skills &amp; Knowledge</text>
+  <text x="510" y="165" text-anchor="middle" font-size="11" fill="#34495e">• Technical comfort</text>
+  <text x="510" y="180" text-anchor="middle" font-size="11" fill="#34495e">• Marketing fundamentals</text>
+  <text x="510" y="195" text-anchor="middle" font-size="11" fill="#34495e">• AI-positive</text>
+  
+  <!-- Center intersection: The Sweet Spot -->
+  <text x="400" y="220" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">IDEAL</text>
+  <text x="400" y="240" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">MEMBER</text>
+
+  <text x="100" y="220" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">IDEAL MEMBER</text>
+
+  <!-- Black Arrow pointing from left to center -->
+  <line x1="170" y1="220" x2="360" y2="220" stroke="black" stroke-width="3"/>
+  <polygon points="370,220 360,215 360,225" fill="black"/>
+
+  <text x="100" y="240" text-anchor="middle" font-size="11" fill="#34495e">• Commits to participation</text>
+  <text x="100" y="255" text-anchor="middle" font-size="11" fill="#34495e">• Transparent about failures</text>
+  <text x="100" y="270" text-anchor="middle" font-size="11" fill="#34495e">• Curious &amp; current</text>
+  
+
+  <!-- Circle 3: Mindset & Character -->
+  <circle cx="400" cy="320" r="120" fill="#27ae60" fill-opacity="0.3" stroke="#229954" stroke-width="2"/>
+  <text x="400" y="345" text-anchor="middle" font-size="14" font-weight="bold" fill="#229954">Mindset &amp; Character</text>
+  <text x="400" y="360" text-anchor="middle" font-size="11" fill="#34495e">• Growth-oriented</text>
+  <text x="400" y="375" text-anchor="middle" font-size="11" fill="#34495e">• Positive energy</text>
+  <text x="400" y="390" text-anchor="middle" font-size="11" fill="#34495e">• Generous &amp; supportive</text>
+
+
+  <!-- Intersection 1-2: Strategic Thinking -->
+  <text x="395" y="165" text-anchor="middle" font-size="12" font-weight="bold" fill="#8e44ad">Strategic &amp; </text>
+  <text x="395" y="180" text-anchor="middle" font-size="12" font-weight="bold" fill="#8e44ad">Tactical</text>
+  <text x="395" y="195" text-anchor="middle" font-size="12" font-weight="bold" fill="#8e44ad">Thinking</text>
+  
+  <!-- Intersection 1-3: Action-Oriented -->
+  <text x="335" y="280" text-anchor="middle" font-size="12" font-weight="bold" fill="#d35400">Action-Takers</text>
+  <text x="335" y="295" text-anchor="middle" font-size="12" font-weight="bold" fill="#d35400">&amp; Implementers</text>
+  
+  <!-- Intersection 2-3: Collaborative -->
+  <text x="475" y="280" text-anchor="middle" font-size="12" font-weight="bold" fill="#16a085">Collaborative</text>
+  <text x="475" y="295" text-anchor="middle" font-size="12" font-weight="bold" fill="#16a085">Problem-Solvers</text>
+  
+
+  
+  <!-- Legend -->
+  <rect x="50" y="350" width="200" height="120" fill="white" stroke="#bdc3c7" stroke-width="1" rx="5"/>
+  <text x="60" y="370" font-size="12" font-weight="bold" fill="#2c3e50">Key Overlaps:</text>
+  <circle cx="70" cy="385" r="6" fill="#8e44ad" fill-opacity="0.6"/> <text x="85" y="390" font-size="14" fill="#34495e">Strategic thinking</text>
+  <circle cx="70" cy="405" r="6" fill="#d35400" fill-opacity="0.6"/> <text x="85" y="410" font-size="14" fill="#34495e">Action-oriented</text>
+  <circle cx="70" cy="425" r="6" fill="#16a085" fill-opacity="0.6"/> <text x="85" y="430" font-size="14" fill="#34495e">Collaborative</text>
+  <circle cx="70" cy="445" r="6" fill="#2c3e50" fill-opacity="0.6"/> <text x="85" y="450" font-size="14" fill="#34495e">Center: Ideal member</text>
+</svg>

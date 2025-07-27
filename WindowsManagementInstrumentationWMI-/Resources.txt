@@ -1,0 +1,10 @@
+This file: https://the-Automator.com/WMI
+AHK Forum: http://www.autohotkey.com/forum/viewtopic.php?t=65688
+https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks-for-scripts-and-applications
+https://www.activexperts.com/admin/scripts/wmi/
+
+
+;***********WMI Scripting Primer******************* 
+Part 1  https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/ms974579(v=msdn.10)
+Part 2  https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/ms974592(v=msdn.10)
+Part 3  https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/ms974547(v=msdn.10)

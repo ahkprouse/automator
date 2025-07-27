@@ -1,0 +1,84 @@
+03:43:58	Dimitri Geerts:	where is the hand button?
+03:43:59	Ben Sacherich:	I am not able to unmute myself.
+03:44:10	Guy Mayer:	i have a question
+03:44:30	Joe Glines:	You'll be next Guy
+03:44:44	Md. Ismail Hosen:	Best practice on writing ahk code?
+03:45:19	Guy Mayer:	i'm here
+03:45:24	Geek Dude:	https://autohotkey.wiki/ I'd like to take a minute to plug a project I've been working on, the AutoHotkey Wiki. It does not have a lot of information on it yet, but as a community project that means you have the great opportunity to add that information!
+03:45:24	Geek Dude:	Currently, to edit the wiki you need a GitHub account. I intend to write a plugin that offers authentication against the forums, but I haven't had the time to write the code for that integration yet.
+03:45:33	Enrique Casas Jimenez:	just asking for advice or tips or deploying/sharing scripts without compiling into exe? zip? or somehow merge files into script file?
+03:46:03	Geek Dude:	@Enrique I share my scripts as a merged .ahk file and a compiled exe. I merge my scripts using CodeQuickTester's "publish" tool
+03:46:48	Geek Dude:	The publish tool will grab all of the #Included files and can strip extra whitespace and comments from the final file
+03:47:02	TAB Tation:	hey all
+03:47:12	Anthony Alvarez:	where is the vs code webinar?
+03:48:37	Enrique Casas Jimenez:	thnx @geek, i'll check it out
+03:49:20	Geek Dude:	@Ismail I haven't seen any formal guides, but I did write a brief page here https://gist.github.com/G33kDude/cbfbf66a08f54927d8b902de4836f28a about some things I do
+03:49:26	TAB Tation:	I love his shirt
+03:49:40	Guy Mayer:	AHKStructures.ahk ---------------------------Error at line 1.Line Text: <script crossorigin="anonymous" defer="defer" integrity="sha512-eO/r0W5ywI2kxVkcH8yquw3n5Gh+cA8lVOgx...Error: Continuation section too long.The program will exit.
+03:49:50	Geek Dude:	A lot of prominent AHK coders have *wildly* different formatting standards
+03:51:07	Ahren Groesch:	Brevity is not efficiency
+03:51:08	TAB Tation:	🤚
+03:51:10	Mage Prometheus:	Is there an official style guide??
+03:51:25	Joe Glines:	@Mage-  nope
+03:51:28	Ahren Groesch:	That's what autohotkey is for
+03:54:25	Brian M:	Raptor, I like your style (and the pretty colours"
+03:54:49	Mage Prometheus:	I couldn't live without colorized braces and lines linking them 😄
+03:55:36	Ahren Groesch:	I understand the desire to make code extra compact, but that desire turns on itself when you can't figure out what your own code does.
+03:55:38	Ben Sacherich:	Readability wins when you have to go back and debug something you wrote 6 weeks ago.
+03:56:45	Joe Glines:	I used to hate Python forcing of white space but, after using it for a while, realized it is a blessing, not a curse
+03:56:59	Ben Sacherich:	Does AHK support Short-Circuiting of IF statements?
+03:57:13	Ali Honarjoo:	If certain loops, like "Loop, Read"  the opening braces cannot be in the same line.
+03:57:19	Ali Honarjoo:	*In
+03:57:42	Ahren Groesch:	scroll wheel abuse
+03:57:52	Dimitri Geerts:	@Ben: it does support Ternary operator : https://lexikos.github.io/v2/docs/Variables.htm#ternary
+03:58:39	Anthony Alvarez:	Has anyone found a script to unmount a USB thumb drive or external USB hard drive safely using AHK on Win10?
+03:59:18	Mage Prometheus:	It's possible to create Perl scripts that are utterly unreadable.
+03:59:19	Dimitri Geerts:	https://lexikos.github.io/v2/docs/commands/DriveEject.htm
+03:59:50	Joe Glines:	@Mage-  I can do that in AutoHotkey.   Just give me a try!!!
+03:59:59	Dimitri Geerts:	(that was for unmounting a thumb drive)
+04:00:15	Anthony Alvarez:	Thank you!
+04:01:37	Mage Prometheus:	Ah, multiple ways to do things and lots of abbreviations that only AHKHeros know.
+04:02:46	Joe Glines:	@Mage   :)
+04:03:07	Joe Glines:	Anybody else have any questions / topics?
+04:04:30	Ahren Groesch:	It doesn't evaluate the expression on the other side if it would evaluate the same way regardless.
+04:05:18	Geek Dude:	You may need to add some parentheses
+04:05:24	Ahren Groesch:	msgbox won't run
+04:05:28	Geek Dude:	I think this evaluates to set var1 := (true && var2 := false)
+04:05:42	Geek Dude:	but I think you meant (var1 := true) && (var2 := false)
+04:06:39	Joe Glines:	@GeekDude-  asking to add parens was exactly what I said when he showed me the other day
+04:07:30	Mage Prometheus:	Short circuiting is very useful with OR statements
+04:07:32	Anthony Alvarez:	Can AHK format a 10 digit number in the clipboard and paste it as a USA phone number. For example: 212-555-1212 where the first three digits are format as area code with two dashes inserted in the appropriate locations?
+04:07:44	Joe Glines:	Sure @Anthony
+04:07:54	Geek Dude:	@Anthony I believe strings and regex is coming up next on the docket, and that's a good task for that time
+04:07:57	Joe Glines:	@Anthony our next topic is Regex & String manipulation
+04:08:09	Ahren Groesch:	Why is the '!' applied after the short?
+04:08:10	Anthony Alvarez:	Thank you Joe
+04:08:29	Mage Prometheus:	Yes, watch out for side effects
+04:08:44	Joe Glines:	@Ahren-  that tells it "NOT"
+04:08:50	Geek Dude:	@Ahren I believe it's being evaluated in the order !(var1 := (false && var2 := "true"))
+04:08:52	Ahren Groesch:	I know what it does, not when it does it
+04:09:08	TAB Tation:	I was going to say reg ex
+04:09:27	Joe Glines:	@Ahren -   yeah, I just always put on parens to help clarify what is going to happen
+04:09:35	Ahren Groesch:	What I learned from this is that assignment inside of "if" expressions are messy and I shouldn't do them.
+04:10:10	TAB Tation:	@ahren I want to eat what you are
+04:10:13	Geek Dude:	Many languages don't let you do assignment inside if because of how messy it can be. Python only very recently added a brand new assignment operator that lets you do it if you really really want to
+04:10:27	Ahren Groesch:	😂 sungold kiwi
+04:10:48	TAB Tation:	also dimitrii
+04:11:18	Ahren Groesch:	Is that what the walrus operator does in Python?
+04:11:36	Geek Dude:	In regards to parentheses, if I'm trying to do ! on something that isn't a single variable/function call I will always put the ! on the outside of a set of a parentheses, e.g. 
+
+if !(var := val)
+if !var
+if !(2 + var)
+if !function()
+
+if !(function1() && function2())
+04:11:59	Mage Prometheus:	I'm beginning to be happy I don't know v1
+04:13:50	Joe Glines:	@Mage  lol
+04:13:57	TAB Tation:	Dimitri what you eating?
+04:14:25	Joe Glines:	@TabNattion  I think Dimitri Geerts is eating brains...  that's why he's so smart
+04:14:43	Dimitri Geerts:	Saving 0.000550 seconds 🤣
+04:14:43	TAB Tation:	hahah
+04:15:03	Joe Glines:	@Dimitri Geerts  exactly!
+04:15:21	Dimitri Geerts:	Special Flakes Classic for CrownField
+04:16:00	TAB Tation:	lol he has a box now

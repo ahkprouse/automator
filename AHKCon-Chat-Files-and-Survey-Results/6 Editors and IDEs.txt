@@ -1,0 +1,138 @@
+05:12:32	Brian Chamberlain:	Great
+05:12:40	TAB Tation:	lol
+05:13:03	T N:	Where's Sublime?
+05:13:18	Geek Dude:	Behind a licensing popup
+05:13:19	Ali Honarjoo:	Where is adventure?
+05:13:22	Enrique Casas Jimenez:	vim 😁 jk
+05:13:23	TAB Tation:	AHK Playground
+05:13:24	Erik Oehm:	AHK Plus Plus VS Code extension is the bomb
+05:13:34	Arbab Irfan (Xeo786):	whats Sublime... just joking..😉
+05:13:56	T N:	@Geek Dude Fortunately there's AHK...
+05:14:09	Brian Chamberlain:	Isaias converted me to VS Code 😄
+05:14:31	Cloaker Smoker:	where emacs option? I edit autohotkey from my elegant lisp powered editor
+05:14:41	Geek Dude:	@Enrique I use VIM on my AHK scripts on my hosted services. It has a built in AHK highlighter that works pretty well
+05:15:12	Arbab Irfan (Xeo786):	me too.... until Github integration I was using AHKStudio I know Mr. Chad wilson since G+
+05:15:30	Chad Wilson:	LOL Mr.
+05:15:43	Joe Glines:	I'm still a huge AHK Studio fan!  :)
+05:16:04	TAB Tation:	you don't use notepad?
+05:16:21	Ahren Groesch:	that burn
+05:16:24	Chad Wilson:	I used Notepad until I wrote Studio.
+05:16:40	Joe Glines:	@wow Chad.  That's nuts!
+05:16:46	Ahren Groesch:	I used notepad++ for maybe 10 years.
+05:17:10	Joe Glines:	I still use SciTE4AutoHotkey for non-AutoHotkey programming
+05:17:13	Arbab Irfan (Xeo786):	O.O notepad..... I could imagine why you had the urge to wrote whole editor
+05:17:15	TAB Tation:	I hand write all my code
+05:17:22	Kirk Lawrence:	??? Any tips on installing VS code for AHK?
+05:17:33	Enrique Casas Jimenez:	@geek, i'm gonna try setting up gvim and try it out again with AHK highlighting
+05:17:41	Joe Glines:	@Kirk watch the webinar we did on VS code
+05:17:41	Ahren Groesch:	just make sure to add an ahk plugin
+05:18:16	Joe Glines:	@kirk  https://the-Automator.com/best-autohotkey-editors-ides/vs-code/
+05:18:24	Kirk Lawrence:	thx Joe
+05:18:42	Guy Mayer:	how do i get the AHK lexer for AHK
+05:18:43	Arbab Irfan (Xeo786):	@Tab nation Hand writting that overkill, I wana know how much you spent of paper and pens
+05:18:48	Geek Dude:	@Xeo786 For a long while my CodeQuickTester had no IDE features beyond "run code". Just a standard edit control That's what eventually lead to me building my own highlighters and word suggestion systems around RichEdit haha
+05:18:53	Dimitri Geerts:	I once tried to add V2 syntax to Studio, but could not get it to work. But this file should define the syntax for V2 https://github.com/dmtr99/AHK-Studio/blob/Beta/lib/Languages/ahkv2.xml
+05:18:54	Joe Glines:	Yep.  Isaias did an amazing job walking through setting it up and using it with GIT
+05:18:54	T N:	I still use a hardware notepad and digitize my AHK code with a scanner & OCR.
+05:19:07	Joe Glines:	@Guy watch the webinar.
+05:19:53	Guy Mayer:	the v2 link is 404
+05:19:58	Geek Dude:	I think tidbit still has/uses the version before I introduced highlighting
+05:20:49	Arbab Irfan (Xeo786):	@Geekdude sensie :) I know your code tester from early days....
+05:21:37	Geek Dude:	I remember when maestrith started working on AHK Studio. He tried *hard* to pitch me on the wonders of XML
+05:22:04	Ben Sacherich:	Is there an editor or ahk script that will auto-indent existing ahk script?
+05:22:22	Geek Dude:	S4AHK, AHK Studio, and CodeQuickTester will do that. VS Code might also?
+05:22:29	Anthony Alvarez:	Are there good examples of boilerplate templates to make a new AHK script?
+05:22:38	Dimitri Geerts:	I made a tutorial how to add a toolbar similar to Scite to AHK Studio: https://www.autohotkey.com/boards/viewtopic.php?f=62&t=72250&hilit=studio
+05:22:39	Arbab Irfan (Xeo786):	I expect VS code to give me hints like AHK studio and find myself I am not using AHK studio
+05:22:42	Geek Dude:	My site https://p.ahkscript.org can also auto-indent code you give it
+05:22:59	TAB Tation:	https://drive.google.com/file/d/1jPrt4OfF04evmwMqFgzS2j-wpkIlSHxj/view?usp=sharing
+05:23:38	Arbab Irfan (Xeo786):	that link reminds me IRC days when I didnt know how to code...
+05:23:44	Geek Dude:	@TAB that gives me a ToS removal notice
+05:24:00	TAB Tation:	ugh
+05:24:01	Arbab Irfan (Xeo786):	p.ahkscript.orf
+05:24:07	Arbab Irfan (Xeo786):	orf*
+05:24:33	Geek Dude:	https://p.autohotkey.com will also take you there if you prefer
+05:25:05	TAB Tation:	https://drive.google.com/file/d/1jPrt4OfF04evmwMqFgzS2j-wpkIlSHxj/view
+05:25:13	TAB Tation:	work?
+05:25:16	Geek Dude:	nope
+05:25:20	Joe Glines:	I have over 30 tutorials for studio on my page  https://the-Automator.com/Studio
+05:25:21	Cloaker Smoker:	there's a solid number of people migrating to vscode because it supports pretty themes (and because it is nice to use one editor for every language but that's very minor)
+05:25:21	Arbab Irfan (Xeo786):	I am using cellphone 😶
+05:25:28	Anthony Alvarez:	Google drive link gives error: We're sorry. You can't access this item because it is in violation of our Terms of Service.
+05:25:28	Darrell Metcalf:	What are the top advantages of GIT integration with a AHK IDE?
+05:26:08	Dimitri Geerts:	V2 was my trigger to jump from ahk Studio to VS Code
+05:26:27	Geek Dude:	@Darrell It's the same as any version control system with any kind of code. https://www.atlassian.com/git/tutorials/what-is-version-control
+05:26:35	Mage Prometheus:	Rust and Lua are easy in VSC and it's been 20+ years since I've used vi and vim. Too old to learn another editor now.
+05:27:22	Geek Dude:	It lets you keep track of changes made by people, look at the history of how a file has changed, merge changes from multiple people into a single file in a team environment, and gives standardized tools for sharing and distributing code to other people
+05:27:30	Joe Glines:	Lots of cool comments here
+05:27:42	Dimitri Geerts:	you can press "." in any GitHub website to jump to the online vs code editor
+05:28:06	Enrique Casas Jimenez:	that's pretty nifty, didn't know of these features
+05:28:14	Geek Dude:	Without version control, if you want to remove a piece of code but still save it for later you might, for example, need to keep it in the file commented out. With git, you can just delete that code and if it turns out you need it later you can rewind and see how the file used to be
+05:28:29	Ben Sacherich:	@GeekDude, thanks for the website.  That's perfect.  I use Notepad++ as my editor so I'll be able to utilize the website for quick formatting without installing additional editors.  I made a similar site to format SQL.
+05:28:37	Dimitri Geerts:	it is a recent option
+05:29:09	Geek Dude:	@Ben you're welcome! The indenting code was actually ported from AHK Studio in 2015
+05:29:13	Joe Glines:	git tutorial with vs code and changes  https://youtu.be/xh8G0ipLj84
+05:29:23	Ben Sacherich:	+1
+05:30:50	Joe Glines:	https://the-Automator.com/Debugging
+05:32:13	Geek Dude:	On new computers where I suddenly need AHK, the compiled version of CodeQuickTester is what I grab instead of AHK Portable because it can run AHK code without having an AHK installation on the system.
+05:32:27	Arbab Irfan (Xeo786):	with github API. I think ahk studio can be integrated with github
+05:33:14	William Schnepp:	I'm bACK,  we'll, HAVE TO DO THIUS AGAIN NEXT yEAR SO I CAN LEARN WHAT I MISSED
+05:33:20	Geek Dude:	AHK Studio does have some GitHub API integration
+05:33:33	Geek Dude:	@William lucky for you, I believe Joe is going to upload the sessions to YouTube
+05:33:54	Joe Glines:	Yes, they'll be shared later
+05:34:08	Arbab Irfan (Xeo786):	@Geekdude sensei ... O.O really
+05:34:09	Ben Sacherich:	@Geek Dude, how can I contact you about a bug in the formatting website?
+05:34:54	Geek Dude:	You can join my Discord server at http://geekdude.io/discord or find me in the regular AHK discord
+05:36:46	Dimitri Geerts:	The most amazing about multiline is that if you copy paste selection, it takes into account every line separately
+05:38:42	T N:	❓❓❓ Does anyone know if there's a way to have VS Code debugger display AHK object structure deeper than three layers?
+05:39:56	Joe Glines:	Very cool Dimitri Geerts
+05:40:02	Joe Glines:	TN I'll ask in a sec
+05:41:03	Arbab Irfan (Xeo786):	ctl+alt+arrow key up and down to make multilines vscode
+05:41:04	Dimitri Geerts:	Ctrl+d is selection the next same word in VS Code, and with F2 you can rename the variable
+05:41:50	Geek Dude:	It's fun to see how other people use VS Code. I use the VIM keybinds extension with it so almost everything about interacting with the code area is different
+05:42:07	Geek Dude:	For those of you who wish you were using VIM, it's a great option
+05:42:26	Arbab Irfan (Xeo786):	ctrl+alt+mouse clicks to get multiple custom pointers
+05:43:31	T N:	In that case the limitation is in inheritance structure, only visible +2 layers deep.
+05:43:41	T N:	Like base->base->base
+05:45:24	Brian M:	great discussion on editors, thanks all
+05:47:46	Geek Dude:	Huh, I never knew there was a shortcut search in VS Code
+05:48:02	Geek Dude:	I just hit control-shift-p and type the name of the action I want to do. Very similar to Maestrith's alt-m menu
+05:49:08	Anthony Alvarez:	Does anyone know of a AHK script to open application software cheats sheets that is context sensitive based upon the active window?
+05:49:34	Arbab Irfan (Xeo786):	only those who live in coding wonderland can utilize full extent of vscode, like walking sitting sleeping eating waking up with code 😆, just look at those hotkeys list Man...! 🙄
+05:49:35	Isaias Baez (RaptorX):	there are none at the moment but we are working on one ^^
+05:53:49	Arbab Irfan (Xeo786):	my code is funky and his code is fun
+mefunc(){
+}
+
+hisfun(){
+}
+05:54:56	Ahren Groesch:	Except your wrists
+05:56:13	Arbab Irfan (Xeo786):	we use keyboard and put so much efforts so other does not need to use keyboard anymore and just use mouse....
+05:56:45	Ben Sacherich:	Does AHK Studio allow you to step through running code and evaluate variables?
+05:57:28	Guy Mayer:	remember the last call where tom showed the "Suggestions" solutions a s they were getting in the way ..
+06:00:46	Robert Rosenwald:	❓❓❓Are we running over
+06:01:29	Joe Glines:	yes @Ben, you can step through
+06:01:58	Joe Glines:	@Robert I think we ran over earlier.  This was set for 1 hour so we're sticking to 1 hour...
+06:02:05	Joe Glines:	I think our lunch went long
+06:02:24	Geek Dude:	In the email you sent out Joe, IDEs was a half-hour block
+06:02:41	Cloaker Smoker:	same with the reddit post afaict
+06:03:34	Joe Glines:	Well we're finish up in 12 minutes
+06:04:08	Geek Dude:	No worries, this is good stuff
+06:04:14	Joe Glines:	Thanks GeekDude
+06:06:13	Robert Rosenwald:	This is very good stuff--I was just being pedantic
+06:06:24	Joe Glines:	Thanks Robert
+06:07:44	Maciej Słojewski:	❓❓❓ Could you please show how to store vscode settings in a cloud?
+06:08:13	Arbab Irfan (Xeo786):	ahkstudio vs code 😇
+06:08:54	Geek Dude:	I didn't know VS Code let you do that
+06:08:59	Ben Sacherich:	Besides syntax highlighting, are there any plugins or tips for using Notepad++ as the IDE?
+06:09:33	Maciej Słojewski:	@Isaias, thanks a lot!
+06:09:50	Geek Dude:	@Ben I have my own highlighting settings that are built for the Zenburn dark theme if you're interested
+06:09:52	William Schnepp:	iS sITE  ORTABLE?
+06:10:07	Cloaker Smoker:	@Ben only thing I can think of is that the debugger plugin on the forums requires using the 32 bit version of n++
+06:10:18	Cloaker Smoker:	which was a pain to figure out
+06:10:27	Geek Dude:	No wonder I could never get it to work lol
+06:10:29	T N:	Any words about VS Code debugger 'Watch' window bugginess or is it just me? Expressions/variable contents often don't seem to display at all.
+06:10:34	Isaias Baez (RaptorX):	TextFX
+06:10:38	William Schnepp:	sorry   is Scite  portable?
+06:10:47	Joe Glines:	SciTE can be portable
+06:11:23	William Schnepp:	thanks   Joe

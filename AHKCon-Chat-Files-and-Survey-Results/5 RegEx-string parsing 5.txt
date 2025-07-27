@@ -1,0 +1,137 @@
+04:17:46	Brian Chamberlain:	🤩This has been great so far!!
+04:17:48	Erik Oehm:	Good stuff!  Thanks Joe, Isaias, and everyone!
+04:17:54	Ahren Groesch:	I've "learned" regex at least half a dozen times. I use it so infrequently that it never sticks.
+04:18:00	TAB Tation:	Welcome
+04:18:07	PHILIP DICICCO:	Same Ahren
+04:18:23	Erik Oehm:	RegEx makes my head hurt.
+04:18:25	TAB Tation:	tried
+04:18:39	Descolada:	The second hardest thing after learning Regex is knowing when to use Regex :D
+04:18:50	Ben Sacherich:	Regex101.com is my favorite place to test RegEx
+04:19:09	Enrique Casas Jimenez:	weirdly, i kinda like creating regex patterns because it's like a puzzle lol
+04:19:10	TAB Tation:	whats that?
+04:19:18	Joe Glines:	lol
+04:19:27	Geek Dude:	I test my RegExes in Discord by sending them to the code bot lol
+04:20:32	Joe Glines:	Very cool GeekDude
+04:20:41	Geek Dude:	@Enrique if you want a regex puzzle check out https://regexcrossword.com/
+04:20:43	Dimitri Geerts:	RegEx is slower than Instr, so using InStr if you can, it is advised
+04:21:10	Joe Glines:	@Dimitri, I'd still say "it depends" to your answer
+04:21:48	Geek Dude:	If the situation is impacted by a few milliseconds difference, sure I'll use InStr, but the syntax for a regex in-string check is so simple that I use it when time below a few miliseconds doesn't matter
+04:22:24	Enrique Casas Jimenez:	thnx @geek!, that'll keep me busy for a while, looks fun 😁
+04:22:44	TAB Tation:	Is a ahren a model?
+04:23:31	Mage Prometheus:	I think they become complex if you start using capturing/non-capturing groups and back references.
+04:23:40	Ahren Groesch:	😅
+04:23:51	Geek Dude:	When the regular expression starts to get complicated, it can start to out-perform native AutoHotkey code. I have one script with a regular expression I wrote that's 10ish lines long (yes, one regex!) because the equivalent native AHK code would've been too slow for the situation
+04:24:53	TAB Tation:	He has the hair I do lol whip ir
+04:25:01	TAB Tation:	it*
+04:25:24	Joe Glines:	Very cool @GeekDude
+04:25:57	Brian Chamberlain:	❓❓❓Would regex be could for searching for common phrases?  Like "user said that....."
+04:25:59	Erik Oehm:	I typically know when I SHOULD be using RegEx.  I just can never figure out how to do what I want to do.  If anyone is a RegEx wizard and wants to make $$, I would totally pay someone to write RegEx for me when I need it!
+04:26:03	Ben Sacherich:	I've used this Regex trick to save a lot of hair pulling when trying to exclude special cases.https://www.rexegg.com/regex-best-trick.html
+04:26:14	Brian Chamberlain:	*good that is
+04:26:39	Ahren Groesch:	It does require practice
+04:27:01	Geek Dude:	@Erik the AutoHotkey Discord server has a whole #regex channel where you can ask for help writing regexes
+04:27:12	Geek Dude:	It may be useful to you in a pinch
+04:27:17	Joe Glines:	I didn't know that @GeekDude
+04:28:10	TAB Tation:	Isasias has an AHK shirt
+04:28:20	Isaias Baez (RaptorX):	yeah
+04:28:21	Isaias Baez (RaptorX):	xD
+04:28:48	TAB Tation:	Mage looks like he will kill AHK
+04:29:13	Ahren Groesch:	https://discord.com/channels/115993023636176902/513105264149266462
+04:29:34	Erik Oehm:	Awesome, thanks!
+04:30:53	TAB Tation:	he has a shirt that says automatator   !!!!!
+04:31:44	TAB Tation:	where is mine
+04:32:04	Thomas Kahn:	😮
+04:33:18	Mage Prometheus:	Most programs/utilities have the option to use regex in 'find'. Turn it on and start using them to gain the skills.
+04:33:43	TAB Tation:	where can I buy?❓
+04:33:44	Joe Glines:	Great point @Mage
+04:33:56	Ahren Groesch:	"most" I wish
+04:34:11	Joe Glines:	It's a really shame MS Word didn't use RegEx instead of writing their own approach
+04:34:23	Thomas Kahn:	Amen to that
+04:35:20	Geek Dude:	I use Notepad++'s find and replace tool all the time for reformatting text using regular expressions. I'll take a flat list of items and replace ^ to " and then $ to ", and then I have code I can copy and paste into AHK to make an array of strings
+04:36:21	Joe Glines:	Yeah, Isaias and Maestrith have done amazing things in VS Code and AHKStudio
+04:38:17	Joe Glines:	I've done a fair amount in SciTE4AutoHotkey
+04:39:25	Dimitri Geerts:	Excel does not have regex functions, but you can add it in VBA if you want to use it.
+04:39:57	Joe Glines:	Yes, but you have to add it, right Dimitri Geerts?
+04:40:23	Geek Dude:	Google Sheets does support regex formulas
+04:41:28	Ahren Groesch:	Because Regex looks like machine code witchcraft to the uninitiated.
+04:41:31	Allan Smith:	No zero or more by default in word. Very frustrating
+04:41:58	Dimitri Geerts:	https://www.spreadsheetweb.com/how-to-use-regular-expressions-in-excel/
+04:42:45	Ben Sacherich:	Notepad++ Find and Replace has Regex support.
+04:42:49	Mage Prometheus:	In LibreOffice regex are supported in Find & Replace and you don't have to replace. Find is very simple.
+04:43:00	Jean Lalonde:	Well explained, Joe :-)
+04:43:02	Brian Chamberlain:	❓❓❓How would you do the reverse of what I asked earlier, and build the list of common expressions to then look for? Like "user said" "I said" "they said" etc.
+04:43:24	Geek Dude:	Wow! I had no idea regular expressions originated from the 50s. "Regular expressions originated in 1951, when mathematician Stephen Cole Kleene described regular languages using his mathematical notation called regular events." -Wikipedia
+04:43:34	Joe Glines:	@Jean Lalonde I thought it was an awesome idea❗
+04:43:54	Joe Glines:	That's crazy GeekDude!
+04:44:42	TAB Tation:	I turn it off all the time cuz I suc at vars
+04:44:51	Joe Glines:	I didn't realize Isaias was a "woman hater"   lol
+04:45:45	Cloaker Smoker:	come on down to parsing theory, we've got "oh my god so much math"
+04:46:33	Darrell Metcalf:	DId Google Search use RegEx?
+04:47:53	Enrique Casas Jimenez:	grouping
+04:48:00	Geek Dude:	The problem is that RegEx works on the full original text, but search engines work on indexes. You can't really build an index that is meaningfully searchable using regexes
+04:48:30	Enrique Casas Jimenez:	i like working with regex groups
+04:48:34	Robert Rosenwald:	https://getbutterfly.com/regular-expressions-regex-in-google-search-console/
+04:48:34	Brian McGinty:	The most important thing if you are new at regex is your don't have to come up with the perfect formula to do it all in one line.  It works to trim some away, store it in a varaiable, use more regex on the new smaller variable etc.
+04:48:42	Descolada:	InStr is faster if you are looking only for one needle, but if looking for multiple needles then Regex might be faster? Because it would avoid going through the whole haystack multiple times
+04:48:46	Joe Glines:	@Amen Brian!
+04:49:06	Joe Glines:	@Descolada-  absolutely!
+04:51:06	Enrique Casas Jimenez:	i sometime check out https://regexr.com/ for community regex patterns
+04:51:09	Anthony Alvarez:	Thank you so much!!
+04:51:34	Mage Prometheus:	I like Everything for indexing my file system and then regex to find files. so fast.
+04:51:49	Enrique Casas Jimenez:	likewise @mage
+04:52:41	Geek Dude:	https://github.com/G33kDude/RichCode.ahk/blob/master/Highlighters/AHK.ahk#L14
+04:52:54	Geek Dude:	Here is a multi-line regex I split for clarity and to be able to comment
+04:54:09	Joe Glines:	Thanks GeekDude
+04:54:40	Ben Sacherich:	Thanks for showing an example of multi-line with inline comments.  I did not know that was possible.
+04:56:46	Anthony Alvarez:	Can AHK be used to parse or write JSON data?
+04:57:00	Cloaker Smoker:	yeah, there's a few libraries
+04:57:02	Geek Dude:	^ $ . * + [] and ? are the most important symbols in my experience
+04:57:21	Darrell Metcalf:	How do you use it for finding ID / ID value in Website source code?
+04:57:24	Geek Dude:	Oh and \
+04:57:38	Geek Dude:	@Anthony I use my library cJson for that
+04:57:40	Dimitri Geerts:	A nice Site with Regex examples for ahk: https://daviddeley.com/autohotkey/xprxmp/autohotkey_expression_examples.htm
+04:58:05	Cloaker Smoker:	@Anthony I'm legally obligated to suggest cJSON for JSON, since I had a hand in it. But autohokey-json is also very good, and widely used
+04:58:09	Joe Glines:	Thanks Dimitri Geerts
+04:58:18	TAB Tation:	Nice
+04:59:22	Joe Glines:	https://the-Automator.com/cJSON?a
+05:00:03	Cloaker Smoker:	fwiw the framework behind cJSON can compile nearly any standard C JSON library
+05:00:13	Cloaker Smoker:	doesn't need to be a dll
+05:00:29	Geek Dude:	What makes cJson special is that it outputs AHK objects rather than some other kind of data structure
+05:00:55	Joe Glines:	Very cool GeekDude!
+05:01:19	Geek Dude:	Someone else did their own implementation for v2 which I've heard works fine
+05:01:33	Joe Glines:	Cool
+05:02:21	Geek Dude:	https://www.autohotkey.com/boards/viewtopic.php?f=83&t=100602
+05:02:23	Darrell Metcalf:	How would you use RegEx to find words in a URL search link then replace the search term with AHK?
+05:02:25	Geek Dude:	This is the v2 one
+05:02:54	Mage Prometheus:	visual studio code has some great json extensions to validate, underline errors in red, and create a tree view.
+05:03:01	Cloaker Smoker:	@geek zoom breaks that link, strips the t=
+05:03:02	Enrique Casas Jimenez:	possibly with RegExReplace()
+05:03:02	Allan Smith:	Gotta be careful with it’s replacements and formatting sometimes in office
+05:03:48	Ali Honarjoo:	Is there a way to read/write excel files without excel software? something like pandas in Python
+05:03:51	TAB Tation:	I am here lol
+05:04:16	TAB Tation:	ahh lol I am Thom
+05:04:18	Geek Dude:	@Ali Yes there are libraries for it but you have to be careful because they don't offer 100% compatilibity
+05:04:29	Enrique Casas Jimenez:	zip files
+05:05:01	TAB Tation:	ppl don't know how I say my name
+05:05:28	Ali Honarjoo:	Is ADODB.Connection for that purpose?
+05:05:40	Geek Dude:	For what it's worth, the general difficulty of generating xls/xlsx files is why many websites just spit out .csv files
+05:06:09	Ali Honarjoo:	Thank you Geek Dude
+05:06:47	TAB Tation:	allan that is a nice ladder
+05:06:55	Ben Sacherich:	I created an ahk that uses a series of Regex statements to format a SQL query statement.  Where is a good place to share it?
+05:07:10	Joe Glines:	@Ben- the ahk forum
+05:07:16	Geek Dude:	I would go to the forum to share that
+05:07:37	TAB Tation:	@jean how you doing
+05:08:39	Darrell Metcalf:	Regex for web scraping examples
+05:08:47	Geek Dude:	Anybody doing things wit inis?
+05:08:47	Jean Lalonde:	@Tom: Good :-) Have people home and can't be 100% in the call.
+05:09:06	TAB Tation:	Ahren is thankinkg hard
+05:09:20	Geek Dude:	Interesting things with INI files I mean
+05:09:45	Ali Honarjoo:	And I think this is where you MUST use {} separately
+05:10:20	Brian Chamberlain:	❓❓❓what about looking for words you may not know that you are putting together a lot? Eg things that could be turned into a hotstring etc.
+05:10:40	Geek Dude:	I don't think I've seen anything that does that before
+05:10:58	Arbab Irfan (Xeo786):	extremely confusing and complicated to achieve. 😁
+05:11:04	Joe Glines:	@Brian  I'd create a key logger and then run frequencies on it
+05:11:06	Dimitri Geerts:	regex is casesensitive
+05:11:21	Cloaker Smoker:	@Brain not sure I follow, but you can dynamically build a regex
+05:11:27	Cloaker Smoker:	*brian lol
+05:11:32	Enrique Casas Jimenez:	like saving everything you type then word cloud it

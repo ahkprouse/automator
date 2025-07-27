@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+<rect width="400" height="300" fill="#e8f4f8"/>
+<text x="200" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#2c3e50">Sample SVG</text>
+
+<circle cx="150" cy="120" r="40" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+<text x="150" y="125" text-anchor="middle" font-size="12" fill="white">Circle</text>
+
+<rect x="210" y="80" width="80" height="80" fill="#e74c3c" stroke="#c0392b" stroke-width="2" rx="5"/>
+<text x="250" y="125" text-anchor="middle" font-size="12" fill="white">Rectangle</text>
+
+<!--Triangle-->
+<path d="M 100 200 L 150 160 L 200 200 Z" fill="#27ae60" stroke="#229954" stroke-width="2"/>
+<text x="150" y="190" text-anchor="middle" font-size="12" fill="white">Triangle</text>
+<text x="200" y="240" text-anchor="middle" font-size="14" fill="#7f8c8d">Edit the code on the left to see changes here!</text>
+</svg>

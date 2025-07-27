@@ -1,0 +1,52 @@
+Versioning:
+    Main.Feature.Changes.Bugs
+
+Legend:
+==================
+    + Add
+    - Remove
+    * Change
+    ! Fix
+    ^ Update
+    % Test
+    & Enable
+    $ Disable
+==================
+
+Scintilla Wrapper v1.4.3.5
+Date: Sun Oct 28 14:38:03 2012 +0100     
+
+    Changes:
+
+    + Add internal __isHexColor() function
+
+    ! Fix some color functions still using BGR format
+
+    Todo:
+
+    + Add support for messages that use structures
+    + Add Documentation
+
+Scintilla Wrapper v1.4.2.4
+Date: Tue Oct 23 18:10:38 2012 +0200     
+
+    Changes:
+
+    ! Fix Ptr in x64 bit systems
+
+    Todo:
+
+    + Add support for messages that use structures
+    + Add Documentation
+
+Scintilla Wrapper v1.4.2.3
+Date: Tue Oct 23 01:35:23 2012 +0200     
+
+    Changes:
+
+    ! Fix temporal object in __sciNotify() function to avoid conflict
+
+    Todo:
+
+    + Add support for messages that use structures
+    + Add Documentation

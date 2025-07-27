@@ -1,0 +1,16 @@
+5x Number of gui lines
+4x Number of DLL calls
+4x Number of menu lines
+2x Number for every command that changed  https://www.autohotkey.com/docs/v2/v2-changes.htm#library
+3x number for every command that was removed
+2x Tabs in guis? removed.......
+1x number of lines
+
+Irfan: Great Idea! that calcutaion would be very simple but result will be simple but It has to be Detailed and maintained by Objects.
+
+18Mar23: yah I was doing to calculaion and storing into ini but I felt that I am complicating stuff
+18Mar23: So I changed all function into a class calls "DifficultyAnalyzer Class" to make it more meaning full and simplyfy and stored calculations into DifficultyAnalyzer.Data object
+18Mar23: fixed the include issue i was doing incl[1] I converted from v2 hehehe to V1
+18Mar23: So I did the Object stuff (maintained by Objects)
+18Mar23: Fixed Disabled line reading issue
+18Mar23: but please explaint ... It has to be Detailed 

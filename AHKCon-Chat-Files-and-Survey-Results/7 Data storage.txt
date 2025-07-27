@@ -1,0 +1,99 @@
+06:12:20	William Schnepp:	lETS aLL JUST uSE   weORD    :
+06:12:30	Arbab Irfan (Xeo786):	hi everyone.... 😁
+06:13:32	Dimitri Geerts:	This pol should be multiselectable...
+06:13:37	Geek Dude:	It occurs to me that I don't really save user settings
+06:13:42	Johannes von Bahr:	I usually use Notepad to store user data
+06:13:57	Ali Honarjoo:	Agreed. multiselectable
+06:14:02	Arbab Irfan (Xeo786):	i using txt ini html and json
+06:14:25	Maciej Słojewski:	❓❓❓Last poll: there should be multi target choice as well, as it depends on situation: sometimes .ini is enough, sometimes .csv is more suitable, sometimes it is SQL.
+06:14:39	William Schnepp:	I use  CVS a lot but want to use   SQL
+06:15:37	Joe Glines:	sql is amazing!
+06:16:04	William Schnepp:	what would be the advantage to using  .ini?
+06:16:19	Geek Dude:	It's easy for users to edit directly
+06:16:35	Dimitri Geerts:	I prefer not to use CSV files, as there is an annoying difference between Europe and America, AHK only default supports pasting the America CSV
+06:16:54	Mage Prometheus:	I have a row of XML, XLST, etc, books from the 00s and I hate it so much
+06:17:42	Allan Smith:	I got into the habit of using ini but now store json o each line
+06:17:49	Descolada:	@William, ease of use for beginners (built into AHK), easier to edit directly, no fear of messing up the registry
+06:18:04	Jean Lalonde:	@Isaias: the pool did not allow for multple anserws. The registry is not the "first" option .
+06:18:28	TAB Tation:	tab is great
+06:18:36	Joe Glines:	LOL Thom
+06:18:45	Geek Dude:	Levitating man in business suit separated values
+06:19:03	Brian Chamberlain:	😆
+06:19:06	Joe Glines:	GeekDude-  LMAO
+06:19:27	Geek Dude:	one🕴️two🕴️three🕴️four
+06:19:37	Mage Prometheus:	TOML is similar to INI files and much better
+06:19:51	Brian Chamberlain:	@geek Love it
+06:20:06	Enrique Casas Jimenez:	ASCII 31 😁
+06:20:13	Descolada:	To each their own :D one💩two💩three💩four
+06:20:28	Brian Chamberlain:	🤣
+06:20:39	Geek Dude:	TOML beats YAML for not having the Norway problem
+06:20:47	Arbab Irfan (Xeo786):	I was introduces to ini files when I used Red Alert 2 command and  conquer game, rulemd.ini to mode game
+06:20:57	Geek Dude:	That is, the country code "NO" doesn't magically turn into "false"
+06:21:29	Geek Dude:	I like JSON because the entire format is easily put into flow chart form (i.e. https://json.org)
+06:22:20	Cloaker Smoker:	I like BSON because you can replace the B with 🅱
+06:22:52	Mage Prometheus:	When I serialize an object model to JSON I can understand it. XML makes me want to drink rum.
+06:22:53	Ali Honarjoo:	power bi
+06:24:38	Jean Lalonde:	Allow me to self promote the new version of my CSV editor application CSV Buddy: https://csvbuddy.quickaccesspopup.com/New in v3: Improved user interfaceMerge columnsAutomate with scripting
+06:24:51	Robert Rosenwald:	This has been great. Got to go.
+06:25:01	Joe Glines:	Cool Jean
+06:25:12	Joe Glines:	We'll have to plan  a video soon on it @Jean
+06:25:19	Joe Glines:	By Robert
+06:26:15	Geek Dude:	Indexes are magical
+06:26:24	Joe Glines:	Amen GeekDude
+06:26:49	William Schnepp:	Programming has too many Options,,, it's good nut Dang it hard on the Brain
+06:27:16	Geek Dude:	SQLite is good stuff. SQLite is the format of choice for data storage on Android, and it stores all your Browser data like history and bookmarks in Firefox and Chrome
+06:35:14	Geek Dude:	Right, values can contain equals but keys cannot contain equals
+06:35:39	Geek Dude:	That said, the treatment of equal signs may vary between libraries
+06:35:40	Chad Wilson:	Moar>More ;)
+06:35:44	Joe Glines:	lol
+06:36:14	Mage Prometheus:	Also CouchDB. I love erlang/OTP and Elixer. Great languages/framework.
+06:36:52	Anthony Alvarez:	is Cleaning data also called "data normalization?"
+06:37:23	Joe Glines:	@anthony  Sometimes
+06:37:58	Geek Dude:	Data normalization is the process of turning data that might be structured, say in a tree structure, into a set of tables that link together in a way that avoids the repetition of any data
+06:38:03	William Schnepp:	AK scripiting Dogs???
+06:38:18	Ali Honarjoo:	:)
+06:38:35	Arbab Irfan (Xeo786):	dawgs to be persice
+06:39:00	Joe Glines:	Tank got his "dawg-parrot"
+06:39:19	Arbab Irfan (Xeo786):	😁
+06:45:48	Geek Dude:	I've gotta run 👋 I'll catch you call next time!
+06:47:21	Eugene Voon:	❓❓❓With storing of the user data in SQL, does that mean its possible for me to store "license keys" in a cloud-hosted DB then have programs I create be licensed using the license keys in the DB? But how fast would this "authenticating" be then?Asking this because I was thinking of trying to start a software solutions business and this was an idea of how to regulate use of the programs.
+06:47:23	Arbab Irfan (Xeo786):	👋
+06:51:13	Allan Smith:	Leave some features server side
+06:51:22	Ahren Groesch:	Most of your paying users aren't even aware of the hacked options. They don't care.
+06:52:25	Eugene Voon:	Thanks yeah its not to fully secure the program. Its just so that I can regulate subscriptions
+06:53:15	Joe Glines:	Yeah @Eugene
+06:53:25	Jean Lalonde:	Have to leave. Thanks guys!
+06:53:35	Chad Wilson:	@Jean \o
+06:54:53	Joe Glines:	bye Jean
+06:55:39	TAB Tation:	Tanks view is my life lol
+06:56:06	Mage Prometheus:	All of the top subscription programs, like the adobe stuff, has been cracked. It doesn't help and angers the users with bloat and slowdown.
+06:57:48	TAB Tation:	I still cant get in the mic lol says joe is the dictator
+06:57:57	Cloaker Smoker:	well, when software you could "buy for life" is suddenly a subscription service, a regular person is going to be a lot more likely to pirate software
+06:58:20	Cloaker Smoker:	there's generally a lot of bad faith related to subscriptions compared to a one time purchase
+06:59:25	Joe Glines:	agreed @Cloaker Smoker
+07:00:11	TAB Tation:	best answer every what works works
+07:00:50	Mage Prometheus:	Exactly. Stop watching endless how-to videos and write some code.
+07:01:46	TAB Tation:	I forget 80% of what I learned
+07:02:19	Arbab Irfan (Xeo786):	its mid Night, I need to sleep, good day.
+07:02:28	Arbab Irfan (Xeo786):	👋
+07:02:32	Chad Wilson:	@Arab \o
+07:02:33	TAB Tation:	night
+07:02:44	Chad Wilson:	@Arbab :)
+07:02:58	Arbab Irfan (Xeo786):	o/
+07:03:30	TAB Tation:	I think im good at AHK but I still ask Isasias stuff
+07:04:35	TAB Tation:	Ahren you look so focused
+07:06:01	Ahren Groesch:	They're just further along in the dark?
+07:06:02	TAB Tation:	you don't know every thing?
+07:06:40	TAB Tation:	how to google... if stack overflow went away we all would die
+07:07:00	Mage Prometheus:	This has all been great. It's almost dark and I need to walk to the shops. Bye guys. 👋
+07:07:02	Chad Wilson:	@TAB 99% of my life would be over :(
+07:07:05	Noel De Bruin:	No one is born knowing everything. That is why there is training, reference documents, and other people to use as resources 😆
+07:07:16	Chad Wilson:	@Mage \o
+07:07:43	Anthony Alvarez:	Does anyone know of a hotkey script to position the cursor in KeePass2 search field? Can it be done?
+07:08:35	Johannes von Bahr:	I have to go to bed. Thank you for today :)
+07:09:51	Chad Wilson:	@Anthony On my Screen.
+07:10:03	Joe Glines:	By Johannes
+07:10:17	Joe Glines:	thanks @Chad
+07:10:35	Anthony Alvarez:	Thank you so much @chad!
+07:10:46	TAB Tation:	bored since I cant join,,,, so ,,, Ahren become a model, Dale love the background, Maciej your cam is in the front, Dimitrie you look like a stream gaming lol
+07:10:49	Anthony Alvarez:	Does anyone know of a AHK script to open application software cheats sheets that is context sensitive based upon the active window?

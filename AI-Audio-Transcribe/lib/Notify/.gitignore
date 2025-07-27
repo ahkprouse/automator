@@ -1,0 +1,12 @@
+
+
+*.wav
+*.txt
+*.ini
+*.mp3
+*.mid
+*.zip 
+
+/audio
+/Old
+/res

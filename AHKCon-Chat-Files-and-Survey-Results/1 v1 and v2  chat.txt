@@ -1,0 +1,152 @@
+00:46:09	David Nowotnik:	Texas
+00:47:00	FELIPE CASTILLO:	Chile south america
+00:47:10	Geek Dude:	13 years here :)
+00:47:12	Brian McGinty:	me about 2 years
+00:47:13	philip lester:	Off and on for about three years
+00:47:14	Erik Oehm:	Nor Cal
+00:47:17	T N:	Since 2005 :o
+00:47:17	Ahmed X:	California; 5 years
+00:47:21	Norman Albertson:	Nashville
+00:47:22	FELIPE CASTILLO:	2 years
+00:47:25	Brian M:	couple of months
+00:47:27	Ahren Groesch:	Washington DC. I've probably been dabbling for over 10 years. Never went very deep into it though.
+00:47:47	Robert Rosenwald:	Scottsdale, AZ
+00:47:50	Anthony Alvarez:	Been using AHK on an off for over a decade.
+00:47:54	Dimitri Geerts:	2014
+00:48:10	Ahren Groesch:	I failed Computer Science in college. Does that count?
+00:48:16	philip lester:	Just autohot key.  That is where I think the problem is
+00:48:20	Anthony Alvarez:	Front end and back end web programming experience.
+00:48:22	FELIPE CASTILLO:	AHK started my journey in programming
+00:48:23	Geek Dude:	AutoHotkey is my background haha
+00:48:23	Brian M:	I can write sql but nosed programmer
+00:48:25	Johannes von Bahr:	Been using it for 12 months, no background in coding
+00:48:30	Robert Rosenwald:	I've looked at it and messed around for several years but only started to take it seriously about 3 months ago
+00:48:49	Brian McGinty:	electronics tech but never a programme..tried many times but couldn't stick with it...ahk is the furthest i've ever gotten
+00:48:54	Erik Oehm:	Extreme Excel Automation
+00:48:55	Jean Lalonde:	+/-2005 at first for hokeys/macro, now mostly for programming.
+00:49:08	Eugene Voon:	About 3 years. Started with using it for games then I got lazy at work and applied AHK at work too
+00:49:17	Robert Rosenwald:	I have no background with coding or programming
+00:49:44	Ahren Groesch:	The most complicated thing I've done with ahk and excel is copy and paste from other apps into it.
+00:49:49	Ahren Groesch:	I got started with gaming hotkeys.
+00:49:55	philip lester:	I am impressed with those who have created games with auto hotkey
+00:50:02	Maciej Słojewski:	Little experience with software development. AutoHotkey is my main hobby now
+00:50:14	T N:	Little bit of assembler/hardware, C#, C, C++, Java, JS...
+00:50:30	Joe Glines:	❓❓❓ What is the plan?
+00:52:21	Ahren Groesch:	What's the send command for sending emojis look like? pasting them into my code editor doesn't work.
+00:52:34	Geek Dude:	Make sure to save your file as UTF-16 or UTF-8-BOM
+00:52:46	Geek Dude:	If it's normal UTF-8, AutoHotkey can misbehave
+00:52:47	Brian McGinty:	type a question mark too, it doesn't show up on the screen of emojis
+00:53:10	Ahren Groesch:	I haven't tried V2 yet
+00:53:53	Robert Rosenwald:	You're missing a quaestion
+00:53:56	Brian McGinty:	I'm in a domain controlled (corporate) environment so it's hard to get new software installed.
+00:53:59	T N:	Poll is missing the option "Not touched it (but planning to)".
+00:54:05	Erik Oehm:	Only use v1.1.  There is just so much good contents and examples available.
+00:54:13	Anthony Alvarez:	Have not installed AHK v2 yet but plan too.
+00:54:14	Robert Rosenwald:	Who has just taken a look at it?
+00:54:14	Ahren Groesch:	Might be a marketing issue. I heard about this on the sub Reddit.
+00:54:16	Eugene Voon:	yea missing an option
+00:54:40	Descolada:	Waiting until FindText has been ported to v2 :)
+00:54:47	Geek Dude:	I've only kind of started touching it, if only because people keep asking me v2 questions 😂
+00:54:53	Johannes von Bahr:	I will continue with v1 because of all the available examples and YT videos.
+00:54:57	Brian McGinty:	I'm at work, so i will disappear every once in a while...
+00:55:02	Ahren Groesch:	There's so much good v1 code out there I won't be able to switch until I get good enough to convert from 1 to 2.
+00:55:32	Geek Dude:	Oh, and speaking of emoji, if you want a shortcut for emojis Windows 10 has a hidden menu accessed by windows key + period, that lets you search for emoji :)
+00:55:48	Ahmed X:	I want to learn v2 for better OOP design familiarity and foundation for learning other languages
+00:56:21	Ahren Groesch:	Plan to, haven't installed it yet.
+00:56:22	Brian M:	I want to have a look at it
+00:56:25	Johannes von Bahr:	I am quite dependent on existing YT videos and examples, and therefore v2, which does not have as much content as v1, is harder to use.
+00:56:38	FELIPE CASTILLO:	Same: want to but havent installed yet
+00:56:59	Ray from Toronto:	I've barely started learning AHK, Joe advised I'm better off with v1.
+00:57:00	Brian M:	Windows Vista cured my addiction to shiny new toys
+00:58:20	Brian M:	it broke my heart
+00:58:37	Ahren Groesch:	I'm surprised they didn't clean out even more of the old features than they did in v2
+00:58:38	Brian McGinty:	Hello Brian M, I thought I accidently joined twice, but you're a different person!  What are the odds?
+00:58:46	Jean Lalonde:	How easy is it to switch your environement from v1 to v2 when you have projects in both versions?
+00:59:26	Joe Glines:	Jean- there is a tool now that really helps
+00:59:29	Geek Dude:	There's a new #Requires statement that lets you pick v1 or v2, and when you double-click the file it will pick the correct one automatically
+01:00:08	Joe Glines:	@GeekDude-  Absolutely!   We just released a script the other day to help add the #Requires to all AutoHotkey scripts
+01:00:29	Anthony Alvarez:	Does version AHK v2 use JavaScript for programming?
+01:01:38	Joe Glines:	@Anthony no
+01:01:41	Jean Lalonde:	@Geek Duke and Joe: Great. And in SciTe4AutoHotkey there is a button in the toolbar to switch env.
+01:02:14	Joe Glines:	@Jean cool.  I was hoping they'd update SciTE4AutoHotkey to allow both
+01:02:47	Joe Glines:	@Jean  With v2 I would think they could finally follow /highlight the parameters in a function
+01:02:58	Geek Dude:	It's funny, I was talking with Micha on the Discord the other day about it. It turns out the implementation of #Requires actually mirrors a project I did eight years ago that let you put the path to your AHK exe in a comment at the top of the script. It was nice to see Lexikos take the same approaches I did
+01:03:32	Joe Glines:	We have tutorials and videos here:  https://the-Automator.com/V2
+01:04:19	T N:	❓❓❓ So with fat arrow functions in v2 you can always write an anonymous inline lambda function instead of storing the function as a func object or BoundFunc into a variable and calling the function via that variable as in v1?
+01:04:42	Geek Dude:	Yes, I believe that's a supported configuration
+01:05:18	Ahren Groesch:	Anything we can do to conform to the standards set by other languages is in our favor.
+01:05:37	Dimitri Geerts:	BoundFunc can indeed be replaced in V2 by simple fat arrow functions
+01:06:20	Geek Dude:	Very good point @Ahren. Other languages have so many people working on the design to come up with something, and by following in their footsteps we benefit from their collective thinking basically for free
+01:07:33	Ahren Groesch:	And it eases the learning process. v1 commands and "Is this an expression or not?" has tripped me up since I started.
+01:09:21	Geek Dude:	If I am writing a library, should I put a #Requires in it? And by extension, what happens if there are multiple #Requires in a script
+01:09:51	Ahren Groesch:	The name doesn't actually matter, it's just for readability?
+01:11:07	Geek Dude:	My suspicion would be it takes the highest version number
+01:12:11	Geek Dude:	This is good! I've had issues in the past developing libraries with newer functionality. I write a lot of libraries, and my strategy has been to wait sometimes up to a year to use new functionality so that people using my libraries don't get caught off guard by it misbehaving.
+01:12:31	Eugene Voon:	❓❓❓Is there a compiler for v2 that compiles like v1 using AhkH; in a way that prevents the script from being easily decoded?
+01:12:59	Joe Glines:	@Eugene I don't belve so but great question
+01:13:30	Geek Dude:	I lament the removal of plain text variable assignment and plain text continuation sections. I think there was a lot of convenience in being able to just throw text into the code without messing with quote marks
+01:13:57	Ahmed X:	??? In V2 you have to replace the gotos referencing a label which is more modern in programming. Do we have to do this for hotkeys to? Like gosub <hotkey>.
+01:14:32	Ahren Groesch:	Never knowing if my variables should be in % % was a huge hurdle for me. I hate that inconsistency.
+01:14:49	Erik Oehm:	Seems like the main problem with V2 is if you are just learning, it's hard for people to tell whether the examples online are v1 or v2.  And most are v1.
+01:16:08	Jean Lalonde:	This never happen. QAP is 100% bug-free ;-)
+01:16:43	Md. Ismail Hosen:	@Geek Dude it's better if you come from other language. In almost all we have to use quotes
+01:17:18	Joe Glines:	@Jean   LMAO
+01:18:15	Joe Glines:	Hi Maciej   Long time since I've seen ya!  :)
+01:18:17	Ahren Groesch:	@Erik That's really going to be the biggest thing.
+01:18:32	Jean Lalonde:	40 attendees. That's great!
+01:18:43	Geek Dude:	@Ismal Easier to cope with perhaps, but I always considered it to be one of AHK's biggest approachability factors
+01:19:25	Geek Dude:	One of the things that make AHK better for some uses than other languages
+01:19:51	Ahren Groesch:	Is AHK really simple though? I think actually their REQUIREMENTS are simple.
+01:20:24	Md. Ismail Hosen:	Understood. It was little bit surprising for me to concatenate and use %Var% and also class definition.
+01:21:22	Geek Dude:	In terms of source code protection, I believe it will be the case that with v2's much more rigorous syntax it will be much easier for someone to eventually write a really good obfuscator
+01:22:37	Eugene Voon:	Another thing that makes me hesitant is that many ready classes that are available are in v1 like for example Geek Dude's chrome class
+01:23:27	Johannes von Bahr:	I feel like v2 is more appreciated and better for people who have experience in other languages, OR have used v1 to the point where they want it to be more consistent, rather than as "simple" as possible. Though consistent and more complete, I feel like v2 is not as appropriate for the demographic that AHK was/is made for, the non-coders who just want to solve problems.
+01:23:56	Ahren Groesch:	No, really they are bad. We are saving us from ourselves.
+01:24:20	Joe Glines:	@Ahrens: you can do very simple things in v1 very simply...  It doesn't mean that the entire language is simple...
+01:25:17	Dimitri Geerts:	Chrome.ahk is already available in V2 :D
+01:26:13	Ahren Groesch:	AHK is built for a purpose.
+01:26:36	Ahren Groesch:	It's very good at what it wants to be good at.
+01:26:42	Dimitri Geerts:	Here is the link on the internet Chrome.ahk for V2 : https://github.com/thqby/ahk2_lib
+01:27:00	Geek Dude:	Besides the language, I think the environment around AutoHotkey is very simple. You don't need to download gigs of special editors and click through license agreements just to write a few lines of code. All you need is notepad and AutoHotkey.exe. And when you want to share your code, it's a breeze! Especially compared to Python and its PyInstaller which is slow and messy
+01:28:10	Ahren Groesch:	Big changes in software incite chaos. Both Python and AHK are better for their big changes. Look at JS, they never went through change chaos and now the whole language is chaos.
+01:28:22	Eugene Voon:	@Dimitri Thanks!
+01:28:32	Jean Lalonde:	@Geek Dude: that was my first reason to use AHK for programming apps.
+01:29:22	T N:	@Geek: This. The simplicity of running AHK code is just beyond beautiful.
+01:30:31	Ahren Groesch:	And I don't think it would even actually solve the problem.
+01:30:54	Geek Dude:	@Ahren I like to point out PHP rather than JavaScript for that purpose. Anyone who uses PHP will know, it's an absolute mess. Most of the standard library is just some guy had a problem and they made a function to solve it and named it seemingly randomly. Some standard functions are snake_case, some are camelCase, some functions do largely the same things. And they *still* don't have proper Unicode support.
+01:31:28	Ahren Groesch:	I never stuck my head down that rabbit hole but I've heard very bad things.
+01:31:46	Erik Oehm:	I started doing VBA programming in 1995.  And it's not going away... ever.
+01:32:27	Ahren Groesch:	There's no way to do a big change like this cleanly. It's going to be a mess. Over the next 5-10 years as the forums fill up with v2 code the people will migrate slowly.
+01:33:00	Joe Glines:	@Erik - agreed!
+01:33:11	Eugene Voon:	I wonder if the Chinese community from the advanced website Joe previously shared has jumped onboard v2 as well
+01:33:24	Joe Glines:	@Great question Eugene
+01:34:01	Ahren Groesch:	Aaron, Erin
+01:34:03	Mage Prometheus:	Since I retired and stopped using c++ I've settled on Rust and Lua. AHK v2 looks a better option than Lua for when blinding performance isn't a requirement.
+01:36:30	Kirk Lawrence:	what was the name of that library?  WebView?
+01:36:35	Lonnie Cherryholmes:	When I tried to get v2 my antivirus deleted the AutoHotkey32.exe as soon as I tried to extract the zip file.
+01:36:36	Isaias Baez (RaptorX):	WebView2
+01:36:40	Dimitri Geerts:	https://github.com/thqby/ahk2_lib
+01:36:47	William Schnepp:	Ok I give I'll look into going V2,   Pray For me!
+01:36:49	Isaias Baez (RaptorX):	https://github.com/thqby/ahk2_lib/tree/master/WebView2
+01:36:52	Geek Dude:	I was working on a WebView2 library under the name Positron, but ran into a lot of problems with threading
+01:37:32	Ahren Groesch:	Options are good. It's not our job to force everyone to switch as fast as possible.
+01:37:44	Erik Oehm:	Backporting is great... I support that.
+01:38:22	Mage Prometheus:	One of the things on my list for learning v2 is the extended support for libraries.
+01:38:55	Kirk Lawrence:	??? Are there MySQL libraries for v2?
+01:39:02	Isaias Baez (RaptorX):	yes
+01:39:10	Isaias Baez (RaptorX):	I think there are
+01:39:21	Isaias Baez (RaptorX):	I created one for SQLite3 as well for v2
+01:39:56	Chad Wilson:	Nope
+01:40:01	Mage Prometheus:	Perhaps we will need a converter from v2 to v1 scripts.
+01:40:55	Geek Dude:	For people interested in playing around with v2 in a sort of sandbox environment, in the AHK Discord we have a bot that will run your v2 code and chat back with anything you send in a message box
+01:41:09	Cloaker Smoker:	https://github.com/Lexikos/AutoHotkey-jk
+01:43:22	Erik Oehm:	;;; ??? Is there a v2 equivalent of AHK-DLL?
+01:43:54	Joe Glines:	I'll ask in a second Erik
+01:44:13	Joe Glines:	That's really cool GeekDude!
+01:44:36	Erik Oehm:	(that actually works!)
+01:45:56	Erik Oehm:	Thanks!
+01:45:58	T N:	❓❓❓ Does any VS Code AHK extension with a debugger work with v2 already?
+01:46:10	Joe Glines:	https://the-Automator.com/AHK_H
+01:46:34	Erik Oehm:	this one?  https://github.com/thqby/AutoHotkey_H
+01:47:03	Geek Dude:	https://www.youtube.com/watch?v=TSvp6ktqo1Q This video walks you through setting up VS Code with AHK v2
+01:47:04	Joe Glines: https://the-automator.com/V2Webinar is the webinar where we configured VS Code & Git with AutoHotkey
